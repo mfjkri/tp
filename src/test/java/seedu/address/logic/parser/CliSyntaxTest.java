@@ -13,5 +13,4 @@ public class CliSyntaxTest {
         assertEquals("e/", CliSyntax.PREFIX_EMAIL.getPrefix());
         assertEquals("t/", CliSyntax.PREFIX_TAG.getPrefix());
     }
-
 }
