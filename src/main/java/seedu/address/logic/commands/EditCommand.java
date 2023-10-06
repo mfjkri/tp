@@ -90,8 +90,6 @@ public class EditCommand extends Command {
      * edited with {@code editTutorDescriptor}.
      */
     private static Tutor createEditedTutor(Tutor tutorToEdit, EditTutorDescriptor editTutorDescriptor) {
-        assert tutorToEdit != null;
-
         Name updatedName = editTutorDescriptor.getName().orElse(tutorToEdit.getName());
         Phone updatedPhone = editTutorDescriptor.getPhone().orElse(tutorToEdit.getPhone());
         Email updatedEmail = editTutorDescriptor.getEmail().orElse(tutorToEdit.getEmail());
