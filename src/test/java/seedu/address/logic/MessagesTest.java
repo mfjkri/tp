@@ -1,19 +1,21 @@
 package seedu.address.logic;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
-
-import seedu.address.logic.parser.Prefix;
 
 
 public class MessagesTest {
 
     @Test
-    public void testErrorMessageForDuplicatePrefixes() {
-        Prefix prefix1 = new Prefix("n/");
-        Prefix[] duplicatePrefixes = {};
+    public void messagesInstance_creation_success() {
+        Messages messages = new Messages();
+        assertNotNull(messages);
+    }
 
-        assertThrows(AssertionError.class, () -> Messages.getErrorMessageForDuplicatePrefixes(duplicatePrefixes));
+    @Test
+    public void testErrorMessageForDuplicatePrefixes() {
+        assertThrows(AssertionError.class, Messages::getErrorMessageForDuplicatePrefixes);
     }
 }

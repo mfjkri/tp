@@ -2,6 +2,7 @@ package seedu.address.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static seedu.address.logic.commands.CommandTestUtil.DESC_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.DESC_BOB;
@@ -181,4 +182,11 @@ public class EditCommandTest {
         assertEquals(expected, editCommand.toString());
     }
 
+    @Test
+    public void editCommandInstance_creation_success() {
+        Index index = Index.fromOneBased(1);
+        EditTutorDescriptor editTutorDescriptor = new EditTutorDescriptor();
+        EditCommand editCommand = new EditCommand(index, editTutorDescriptor);
+        assertNotNull(editCommand);
+    }
 }
