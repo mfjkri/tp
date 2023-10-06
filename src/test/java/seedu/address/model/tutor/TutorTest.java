@@ -11,6 +11,9 @@ import static seedu.address.testutil.Assert.assertThrows;
 import static seedu.address.testutil.TypicalTutors.ALICE;
 import static seedu.address.testutil.TypicalTutors.BOB;
 
+import java.util.HashSet;
+import java.util.Objects;
+
 import org.junit.jupiter.api.Test;
 
 import seedu.address.testutil.TutorBuilder;
@@ -90,5 +93,22 @@ public class TutorTest {
         String expected = Tutor.class.getCanonicalName() + "{name=" + ALICE.getName() + ", phone=" + ALICE.getPhone()
                 + ", email=" + ALICE.getEmail() + ", tags=" + ALICE.getTags() + "}";
         assertEquals(expected, ALICE.toString());
+    }
+
+    @Test
+    public void hashCode_validTutor_returnsHashCode() {
+        Tutor tutor = new Tutor(
+            new Name("John Doe"),
+            new Phone("12345678"),
+            new Email("johndoe@example.com"),
+            new HashSet<>()
+        );
+
+        int expectedHashCode = Objects.hash(tutor.getName(),
+            tutor.getPhone(),
+            tutor.getEmail(),
+            tutor.getTags());
+
+        assertEquals(expectedHashCode, tutor.hashCode());
     }
 }
