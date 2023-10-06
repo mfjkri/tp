@@ -12,7 +12,7 @@ public class MessagesTest {
     @Test
     public void testErrorMessageForDuplicatePrefixes() {
         Prefix prefix1 = new Prefix("n/");
-        Prefix[] duplicatePrefixes = { prefix1, prefix1 };
+        Prefix[] duplicatePrefixes = {};
 
         assertThrows(AssertionError.class, () -> Messages.getErrorMessageForDuplicatePrefixes(duplicatePrefixes));
     }
