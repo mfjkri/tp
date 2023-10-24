@@ -387,13 +387,13 @@ Deletes a schedule in the address book based on their index number in the table 
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous AddressBook home folder.
 
 **Q**: What if I make a mistake when typing a command?<br>
-**A**: Don't worry! If you make a mistake while typing a command, Tutor Connect will provide an error message to guide you. Simply correct the command and try again.
+**A**: Don't worry! If you make a mistake while typing a command, TutorConnect will provide an error message to guide you. Simply correct the command and try again.
 
 **Q**: Can I view schedules in a different time zone?<br>
-**A**: Currently, Tutor Connect displays schedules in your local time zone. If you need to coordinate with tutors in different time zones, you may consider using a world clock or time zone converter alongside the application.
+**A**: Currently, TutorConnect displays schedules in your local time zone. If you need to coordinate with tutors in different time zones, you may consider using a world clock or time zone converter alongside the application.
 
-**Q**: Is there a way to export my data from Tutor Connect?<br>
-**A**: Currently, Tutor Connect doesn't have an export feature. However, you can manually copy the `data.json` file from the "Tutor Connect" folder for backup or transfer purposes.
+**Q**: Is there a way to export my data from TutorConnect?<br>
+**A**: Currently, TutorConnect doesn't have an export feature. However, you can manually copy the `data.json` file from the "TutorConnect" folder for backup or transfer purposes.
 
 **Q**: How do I report a bug or suggest a feature?<br>
 **A**: We value your feedback! Please visit our [Github repository](https://github.com/AY2324S1-CS2103T-T17-3/tp) and open an issue to report a bug or make a feature request.
