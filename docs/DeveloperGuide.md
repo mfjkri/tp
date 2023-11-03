@@ -520,34 +520,36 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority &nbsp; | As a …​   | I want to …​                                                                                   | So that I can…​                                                             |
-|-----------------|-----------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| `* * *`         | manager   | add new tutors to the system                                                                   | manage them                                                                 |
-| `* * *`         | manager   | store each tutor's contact information, including their name, phone number, and email address  | access it later                                                             |
-| `* * *`         | manager   | remove tutors from the system when they are no longer available                                | keep the system up to date                                                  |
-| `* * *`         | manager   | view a list of all tutors in the system                                                        | have an overview of available tutors                                        |
-| `* * *`         | manager   | search for a tutor by their name                                                               | quickly find their information                                              |
-| `* * *`         | manager   | create a schedule for each tutor                                                               | track their schedule                                                        |
-| `* * *`         | manager   | delete a schedule for a tutor                                                                  | remove an appointment when the tutor is not available                       |
-| `* * *`         | manager   | view a summary of all upcoming tutoring sessions                                               | plan accordingly                                                            |
-| `* * *`         | manager   | save the schedule and tutor’s information                                                      | can access it again in the future                                           |
-| `* *`           | manager   | mark sessions as attended or missed                                                            | track the status of tutoring sessions                                       |
-| `* *`           | manager   | keep a record of completed tutoring sessions                                                   | maintain a history of successful sessions                                   |
-| `* *`           | manager   | keep a record of missed tutoring sessions                                                      | monitor attendance and address any issues                                   |
-| `* *`           | manager   | edit the tutor information                                                                     | update their details easily                                                 |
-| `* *`           | manager   | edit the schedule information                                                                  | reschedule tutoring sessions                                                |
-| `* *`           | manager   | shorter syntax                                                                                 | work faster                                                                 |
-| `* *`           | manager   | view schedules by tutor                                                                        | easily plan the schedule of that tutor                                      |
-| `* *`           | manager   | have a help function                                                                           | quickly check the command parameters without having to check the User Guide |
-| `*`             | manager   | export data to an excel file                                                                   | use the data for other purposes                                             |
-| `*`             | manager   | import data from an excel file                                                                 | easily restore and update records                                           |
-| `*`             | manager   | add new students to the system                                                                 | enrol them                                                                  |
-| `*`             | manager   | store each students contact information, including their name, phone number, and email address | access it later                                                             |
-| `*`             | manager   | remove students from the system when they are no longer enrolled                               | maintain an accurate student list                                           |
-| `*`             | manager   | view a list of all students in the system                                                      | have an overview of enrolled students                                       |
-| `*`             | manager   | edit the student information                                                                   | keep their details up to date                                               |
-| `*`             | manager   | assign specific tutors to a student                                                            | have personalised tutoring (one tutor to many students)                     |
-| `*`             | manager   | reassign tutors to students                                                                    | adapt to changing needs and preferences                                     |
+| Priority &nbsp; | As a …​ | I want to …​                                                                                   | So that I can…​                                                             |
+|-----------------|---------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| `* * *`         | manager | add new tutors to the system                                                                   | manage them                                                                 |
+| `* * *`         | manager | store each tutor's contact information, including their name, phone number, and email address  | access it later                                                             |
+| `* * *`         | manager | remove tutors from the system when they are no longer available                                | keep the system up to date                                                  |
+| `* * *`         | manager | view a list of all tutors in the system                                                        | have an overview of available tutors                                        |
+| `* * *`         | manager | search for a tutor by their name                                                               | quickly find their information                                              |
+| `* * *`         | manager | create a schedule for each tutor                                                               | track their schedule                                                        |
+| `* * *`         | manager | delete a schedule for a tutor                                                                  | remove an appointment when the tutor is not available                       |
+| `* * *`         | manager | view a summary of all upcoming tutoring sessions                                               | plan accordingly                                                            |
+| `* * *`         | manager | save the schedule and tutor’s information                                                      | can access it again in the future                                           |
+| `* *`           | manager | mark sessions as completed or missed                                                           | track the status of tutoring sessions                                       |
+| `* *`           | manager | unmark sessions                                                                                | clear the status of marked sessions                                         |
+| `* *`           | manager | keep a record of completed tutoring sessions                                                   | maintain a history of successful sessions                                   |
+| `* *`           | manager | keep a record of missed tutoring sessions                                                      | monitor attendance and address any issues                                   |
+| `* *`           | manager | edit the tutor information                                                                     | update their details easily                                                 |
+| `* *`           | manager | edit the schedule information                                                                  | reschedule tutoring sessions                                                |
+| `* *`           | manager | view schedules by tutor                                                                        | easily plan the schedule of that tutor                                      |
+| `* *`           | manager | view schedules by date as a calendar                                                           | easily plan the schedule for that day                                       |
+| `* *`           | manager | have a help function                                                                           | quickly check the command parameters without having to check the User Guide |
+| `*`             | manager | shorter syntax                                                                                 | work faster                                                                 |
+| `*`             | manager | export data to an excel file                                                                   | use the data for other purposes                                             |
+| `*`             | manager | import data from an excel file                                                                 | easily restore and update records                                           |
+| `*`             | manager | add new students to the system                                                                 | enrol them                                                                  |
+| `*`             | manager | store each students contact information, including their name, phone number, and email address | access it later                                                             |
+| `*`             | manager | remove students from the system when they are no longer enrolled                               | maintain an accurate student list                                           |
+| `*`             | manager | view a list of all students in the system                                                      | have an overview of enrolled students                                       |
+| `*`             | manager | edit the student information                                                                   | keep their details up to date                                               |
+| `*`             | manager | assign specific tutors to a student                                                            | have personalised tutoring (one tutor to many students)                     |
+| `*`             | manager | reassign tutors to students                                                                    | adapt to changing needs and preferences                                     |
 
 
 *{More to be added}*
@@ -642,6 +644,29 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 2.  TutorConnect shows a list of schedules
 3.  User requests to mark a specific schedule in the list as completed
 4.  TutorConnect marks the schedule as completed
+
+    Use case ends.
+
+**Extensions**
+
+* 2a. The list is empty.
+
+  Use case ends.
+
+* 3a. The given index is invalid.
+
+    * 3a1. TutorConnect shows an error message.
+
+      Use case resumes at step 2.
+
+**Use case: Unmark a schedule**
+
+**MSS**
+
+1.  User requests to list schedules
+2.  TutorConnect shows a list of schedules
+3.  User requests to unmark a specific schedule in the list
+4.  TutorConnect unmarks the schedule by clearing its status
 
     Use case ends.
 
