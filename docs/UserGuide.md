@@ -498,6 +498,8 @@ Let's assign this class to the tutor **Bernice Yu**.
 
 Type in `add-s 1 st/2023-12-01T09:00 et/2023-12-01T11:00` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Wow! The new schedule for Bernice Yu has now been added to the list of schedules.
