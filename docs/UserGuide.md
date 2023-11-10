@@ -571,7 +571,7 @@ Tada! The schedule has now been updated to 8am.
 
 **Command format**
 
-<img src="images/editScheduleCommandSyntax.png" height="300px">
+<img src="images/editScheduleCommandSyntax.png" height="200px">
 
 **Errors you might encounter**
 
@@ -620,7 +620,7 @@ Use the list schedule function!
 Tada! For step 2, the schedule list has now been updated to show schedules assigned to tutor Irfan Ibrahim that are 
 marked as `COMPLETED`.
 
-![list schedule tutor completed](images/list-schedules/list-s-tutor-completed.png)
+<img src="images/list-schedules/list-s-tutor-completed.png" height="400px">
 
 <div markdown="block" class="alert alert-success">
 
