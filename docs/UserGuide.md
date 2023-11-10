@@ -115,7 +115,7 @@ If the jar file cannot launch on double-click:
 2. Type the following command in the terminal: `java -jar TutorConnect.jar` and hit enter.
 3. The command should run and launch the application.
 </div>
-
+<div style="page-break-after: always;"></div>
 ### Navigating the Interface
 
 TutorConnect comes equipped with a [GUI](#glossary) interface that provides visual feedback to you.
@@ -152,6 +152,8 @@ Click on any of these below to jump to the respective sections of the guide!
 * [Adding your first tutor](#adding-your-first-tutor)
 * [Adding your first schedule](#adding-your-first-schedule)
 * [Marking your schedule as completed](#marking-your-schedule-as-completed)
+
+<div style="page-break-after: always;"></div>
 
 ### Start
 ![start](images/tutorial/start.png)
