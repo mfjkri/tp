@@ -75,6 +75,8 @@ need. Look out for these coloured boxes!
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## Quick Start
 
 Welcome to TutorConnect! We are excited to get you started with a more efficient scheduling method.
@@ -114,6 +116,7 @@ If the jar file cannot launch on double-click:
 3. The command should run and launch the application.
 </div>
 
+<div style="page-break-after: always;"></div>
 
 ### Navigating the Interface
 
@@ -134,6 +137,8 @@ Below is a quick overview of the various components of our interface.
 [Back To Top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## TutorConnect Tutorial (for new users)
 
@@ -214,6 +219,8 @@ Alternatively, visit the [**FAQ Section**](#faq) to view some frequently asked q
 [Back To Top](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## Features
 From pairing classes with tutors to managing your tuition centre schedules, TutorConnect provides you with a 
@@ -463,6 +470,8 @@ Here is a list of the error messages you may encounter, when the command is ente
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### Schedule Related Features
 As busy tuition centre coordinators, creating conflict-free schedules is no easy feat. Don't worry! TutorConnect has 
@@ -1070,7 +1079,7 @@ question!
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Known issues
+## Known Issues
 
 TutorConnect is always looking to improve. Currently, there are a few known issues within the app that our 
 development team is working round the clock to solve. Don't worry, every version of TutorConnect released for you to 
@@ -1116,8 +1125,8 @@ Here are some inputs you might come across in the User Guide:
 
 | Input               | Description                                       | Limitations                                                                                  |
 |---------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------|
-| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and <br/>should <br/>not be blank.          |
-| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 <br/>digits long.                             |
+| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and should not be blank.                    |
+| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 digits long.                                  |
 | `e/EMAIL`           | Refers to the email address of the tutor.         | Of the format local-part@domain[<sup>2</sup>](#note2).                                       |
 | `st/START_TIME`     | Refers to the start time of the schedule.         | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                |
 | `et/END_TIME`       | Refers to the end time of the schedule.           | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                |
@@ -1165,7 +1174,7 @@ Commands reference: [add-s](#adding-a-schedule-add-s), [edit-s](#editing-a-sched
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Command summary
+## Command Summary
 
 | Action              | Format, Examples                                                                                           |
 |---------------------|------------------------------------------------------------------------------------------------------------|
