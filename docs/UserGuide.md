@@ -413,7 +413,7 @@ Type in `find-t john` and press enter.
 
 Tada! You have found tutor **John Doe** (and any other tutors whose name contains John).
 
-<img src="images/findTutor.png" height="400px">
+<img src="images/findTutor.png" height="360px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -467,6 +467,8 @@ Well done! You have deleted tutor **John Doe**.
 
 **Command format**
 ![delete tutor command](images/deleteTutorCommandSyntax.png)
+
+<div style="page-break-after: always;"></div>
 
 **Errors you might encounter**
 
