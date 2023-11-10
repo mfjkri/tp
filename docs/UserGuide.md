@@ -803,6 +803,8 @@ Phew! The schedule has now been unmarked.
 
 ![unmark schedule](images/unmarkSchedule.png)
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
@@ -888,7 +890,7 @@ To view the schedules on **15 September 2023** as a calendar, type in `show 2023
 
 Woah look at that! The schedules are now being displayed in a calendar form.
 
-![show calendar](images/showCalendar.png)
+<img src="images/showCalendar.png" height="400px">
 
 <div markdown="block" class="alert alert-success">
 
