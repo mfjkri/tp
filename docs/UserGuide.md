@@ -601,6 +601,8 @@ Use the list schedule function!
 1. On the left panel that shows the list of tutors, check the `TUTOR_INDEX` of Irfan Ibrahim. Here, the index is 2.
 2. Type in `list-s 2 m/1` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Tada! For step 2, the schedule list has now been updated to show schedules assigned to tutor Irfan Ibrahim that are 
