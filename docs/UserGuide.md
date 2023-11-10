@@ -892,6 +892,8 @@ Woah look at that! The schedules are now being displayed in a calendar form.
 
 <img src="images/showCalendar.png" height="400px">
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-success">
 
 **:bulb: Worried about having too many schedules to view?**<br>
@@ -933,6 +935,8 @@ This command might seem complicated, but it is easy to use with only 1 possible 
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### System Feature
 
