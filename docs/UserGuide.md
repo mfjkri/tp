@@ -475,6 +475,8 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 ### Schedule Related Features
 As busy tuition centre coordinators, creating conflict-free schedules is no easy feat. Don't worry! TutorConnect has 
 you covered with our extensive list of features, all about creating and managing scheduling issues.
