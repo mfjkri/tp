@@ -936,8 +936,6 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
-<div style="page-break-after: always;"></div>
-
 ### System Feature
 
 Beyond just providing you with powerful features related to tutors and schedule tracking, TutorConnect offers some 
@@ -1000,7 +998,9 @@ Instead of deleting them one by one, use the clear command!
 
 <div markdown="block" class="alert alert-warning">
 
-**:warning: Warning**<br>
+<div style="page-break-after: always;"></div>
+
+**:danger: Danger**<br>
 
 This action is irreversible! Your tutors and schedules will be gone **FOREVER**.
 
