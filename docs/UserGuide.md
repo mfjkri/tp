@@ -475,8 +475,6 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
-<div style="page-break-after: always;"></div>
-
 ### Schedule Related Features
 As busy tuition centre coordinators, creating conflict-free schedules is no easy feat. Don't worry! TutorConnect has 
 you covered with our extensive list of features, all about creating and managing scheduling issues.
@@ -497,8 +495,6 @@ Let's assign this class to the tutor **Bernice Yu**.
 **Follow these steps**
 
 Type in `add-s 1 st/2023-12-01T09:00 et/2023-12-01T11:00` and press enter.
-
-<div style="page-break-after: always;"></div>
 
 **What you can expect to see**
 
@@ -605,14 +601,14 @@ Use the list schedule function!
 1. On the left panel that shows the list of tutors, check the `TUTOR_INDEX` of Irfan Ibrahim. Here, the index is 2.
 2. Type in `list-s 2 m/1` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Tada! For step 2, the schedule list has now been updated to show schedules assigned to tutor Irfan Ibrahim that are 
 marked as `COMPLETED`.
 
 ![list schedule tutor completed](images/list-schedules/list-s-tutor-completed.png)
-
-<div style="page-break-after: always;"></div>
 
 <div markdown="block" class="alert alert-success">
 
