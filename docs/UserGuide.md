@@ -55,6 +55,8 @@ need. Look out for these coloured boxes!
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-warning">
 
 **:warning: Warning**<br>
