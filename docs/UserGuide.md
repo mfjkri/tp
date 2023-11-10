@@ -407,6 +407,8 @@ If this has happened to you before, fret not! The find tutor command is here to 
 
 Type in `find-t john` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Tada! You have found tutor **John Doe** (and any other tutors whose name contains John).
@@ -478,6 +480,8 @@ Here is a list of the error messages you may encounter, when the command is ente
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### Schedule Related Features
 As busy tuition centre coordinators, creating conflict-free schedules is no easy feat. Don't worry! TutorConnect has 
