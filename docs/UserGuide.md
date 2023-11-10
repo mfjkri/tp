@@ -1113,7 +1113,7 @@ Here are some descriptions of the words you might come across in the User Guide:
 
 ### Input Examples
 
-| Input Fields                       | :white_check_mark:                               | :x:                                 |
+| Input Fields                       | :heavy_check_mark:                               | :x:                                 |
 |------------------------------------|--------------------------------------------------|-------------------------------------|
 | `n/NAME`                           | John Doe, John Doe123                            | John@Doe                            |
 | `p/PHONE NUMBER`                   | 98765432, 987                                    | abc, 98                             |
