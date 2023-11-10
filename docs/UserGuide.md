@@ -200,8 +200,6 @@ Here is how to use the [**add-s**](#adding-a-schedule-add-s) command to assign t
 3. Hit enter
 4. Tada! John Doe now has a schedule on **1 October 2023** from **9AM to 11AM**
 
-<div style="page-break-after: always;"></div>
-
 ### Marking your schedule as completed
 
 ![mark](images/tutorial/mark.png)
