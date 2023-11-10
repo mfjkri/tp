@@ -8,24 +8,32 @@ start
 'Since the beta syntax does not support placing the condition outside the
 'diamond we place it as the true branch instead.
 
-if () then ([valid Index])
-    :Get tutor;
-    if () then ([valid StartTime and EndTime for schedule])
-        :Create new Schedule object;
-        if () then ([schedule does not already exists])
-            if () then ([schedule does not clash])
-                    : Add Schedule;
-                else ([else])
-                    :Throw Exception;
-                endif
+if () then ([input is valid])
+    :Construct AddScheduleCommand object;
+    :Return back to LogicManager;
+    :LogicManager executes AddScheduleCommand;
+    if () then ([valid Index])
+        :Get tutor;
+        if () then ([valid StartTime and EndTime for schedule])
+            :Create new Schedule object;
+            if () then ([schedule does not already exists])
+                if () then ([schedule does not clash])
+                        : Add Schedule;
+                        :Update Ui;
+                    else ([else])
+                        :Display clashing\nschedule error message;
+                    endif
+            else ([else])
+                :Display duplicate\nschedule error message;
+            endif
         else ([else])
-            :Throw  Exception;
+            :Display invalid start and\nend time error message;
         endif
     else ([else])
-        :Throw Exception;
+        :Display invalid\nindex error message;
     endif
 else ([else])
-    :Throw Exception;
+:Display error message;
 endif
 stop
 @enduml

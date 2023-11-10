@@ -5,12 +5,12 @@ skinparam ArrowFontStyle plain
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
-participant ":ListScheduleCommandParser" as ListScheduleCommandParser LOGIC_COLOR
-participant "l:ListScheduleCommand" as ListScheduleCommand LOGIC_COLOR
+participant ":ListSchedule\nCommandParser" as ListScheduleCommandParser LOGIC_COLOR
+participant "l:ListSchedule\nCommand" as ListScheduleCommand LOGIC_COLOR
 participant ":CommandResult" as CommandResult LOGIC_COLOR
 participant ":Person" as Person LOGIC_COLOR
-participant ":TutorPredicate" as TutorPredicate LOGIC_COLOR
-participant ":StatusPredicate" as StatusPredicate LOGIC_COLOR
+participant ":Tutor\nPredicate" as TutorPredicate LOGIC_COLOR
+participant ":Status\nPredicate" as StatusPredicate LOGIC_COLOR
 end box
 
 box Model MODEL_COLOR_T1

@@ -10,6 +10,7 @@ title: Developer Guide
 ## **Acknowledgements**
 
 * The foundational code was derived from [Addressbook-level3](https://se-education.org/addressbook-level3/)
+* Current time display in status bar was reused from [James_D](https://stackoverflow.com/a/42384436) at stackoverflow.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -37,7 +38,7 @@ Given below is a quick overview of main components and how they interact with ea
 
 **Main components of the architecture**
 
-**`Main`** (consisting of classes [`Main`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/Main.java) and [`MainApp`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/MainApp.java)) is in charge of the app launch and shut down.
+**`Main`** (consisting of classes [`Main`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/Main.java) and [`MainApp`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/MainApp.java)) is in charge of the app launch and shut down.
 * At app launch, it initializes the other components in the correct sequence, and connects them up with each other.
 * At shut down, it shuts down the other components and invokes cleanup methods where necessary.
 
@@ -69,13 +70,13 @@ The sections below give more details of each component.
 
 ### UI component
 
-The **API** of this component is specified in [`Ui.java`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/ui/Ui.java)
+The **API** of this component is specified in [`Ui.java`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/ui/Ui.java)
 
 ![Structure of the UI Component](images/UiClassDiagram.png)
 
-The UI consists of a `MainWindow` that is made up of parts e.g.`CommandBox`, `ResultDisplay`, `PersonListPanel`, `ScheduleListPanel`, `CalendarPanel`, `StatusBarFooter` etc. All these, including the `MainWindow`, inherit from the abstract `UiPart` class which captures the commonalities between classes that represent parts of the visible GUI.
+The UI consists of a `MainWindow` that is made up of parts e.g.`CommandBox`, `ResultDisplay`, `ListsPanel`, `PersonListPanel`, `ScheduleListPanel`, `CalendarPanel`, `StatusBarFooter` etc. All these, including the `MainWindow`, inherit from the abstract `UiPart` class which captures the commonalities between classes that represent parts of the visible GUI.
 
-The `UI` component uses the JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the [`MainWindow`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/ui/MainWindow.java) is specified in [`MainWindow.fxml`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/resources/view/MainWindow.fxml)
+The `UI` component uses the JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the [`MainWindow`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/ui/MainWindow.java) is specified in [`MainWindow.fxml`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/resources/view/MainWindow.fxml)
 
 The `UI` component,
 
@@ -86,7 +87,7 @@ The `UI` component,
 
 ### Logic component
 
-**API** : [`Logic.java`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/logic/Logic.java)
+**API** : [`Logic.java`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/logic/Logic.java)
 
 Here's a (partial) class diagram of the `Logic` component:
 
@@ -111,11 +112,11 @@ Here are the other classes in `Logic` (omitted from the class diagram above) tha
 <img src="images/ParserClasses.png" width="600"/>
 
 How the parsing works:
-* When called upon to parse a user command, the `AddressBookParser` class creates an `XYZCommandParser` (`XYZ` is a placeholder for the specific command name e.g., `AddTutorCommandParser`) which uses the other classes shown above to parse the user command and create a `XYZCommand` object (e.g., `AddCommand`) which the `AddressBookParser` returns back as a `Command` object.
+* When called upon to parse a user command, the `AddressBookParser` class creates an `XYZCommandParser` (`XYZ` is a placeholder for the specific command name e.g., `AddTutorCommandParser`) which uses the other classes shown above to parse the user command and create a `XYZCommand` object (e.g., `AddTutorCommand`) which the `AddressBookParser` returns back as a `Command` object.
 * All `XYZCommandParser` classes (e.g., `AddTutorCommandParser`, `DeleteTutorCommandParser`, ...) inherit from the `Parser` interface so that they can be treated similarly where possible e.g, during testing.
 
 ### Model component
-**API** : [`Model.java`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/model/Model.java)
+**API** : [`Model.java`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/model/Model.java)
 
 <img src="images/ModelClassDiagram.png" width="450" />
 
@@ -130,7 +131,7 @@ The `Model` component,
 
 ### Storage component
 
-**API** : [`Storage.java`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/storage/Storage.java)
+**API** : [`Storage.java`](https://github.com/AY2324S1-CS2103T-T17-3/tp/tree/master/src/main/java/seedu/address/storage/Storage.java)
 
 <img src="images/StorageClassDiagram.png" width="550" />
 
@@ -157,7 +158,8 @@ The following shows the activity diagram from when a user executes the `add-t` c
 
 ![AddTutorActivityDiagram](images/AddTutorActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user launches the application for the first time.
 
@@ -175,8 +177,9 @@ The following sequence diagram shows how the above steps for add tutor operation
 ![AddTutorSequenceDiagram](images/AddTutorSequenceDiagram.png)
 
 #### Design rationale
+{:.no_toc}
 
-The `add-t` command was designed this way to ensure consistency with the previous `add` person.
+The `add-t` command was designed this way to ensure consistency with the previous `add` command in AB3.
 
 **Aspect: Optional fields**
 * **Alternative 1:** Allow optional fields when adding tutor (e.g. user can omit phone number or email when adding a 
@@ -189,7 +192,7 @@ The `add-t` command was designed this way to ensure consistency with the previou
     * Cons: Users must have every field filled before they can add a tutor.
 
 **Aspect: Non-unique phone number and email restriction**
-* **Alternative 1:** Allow only unique phone numbers and emails of tutors.
+* **Alternative 1:** Allow only unique phone numbers and emails or tutors.
     * Pros: Decreases erroneous user input when duplicated tutors are entered.
     * Cons: There can be real life scenarios where tutors have the same phone numbers of emails (since there is no 
       strict requirement against it).
@@ -206,23 +209,24 @@ The `add-t` command was designed this way to ensure consistency with the previou
     * Pros: Tutors with the same name can be differentiated with numbers.
     * Pros: Tutors' names are restricted to a limited number of characters to promote easy searching and reference 
       in the future. This also introduces uniformity.
-    * Cons: Number inputs are accepted as names and users can erroneously use phone numbers as names instead.
+    * Cons: Number inputs are accepted as names, and users can erroneously use phone numbers as names instead.
     * Cons: Tutors' names with commas cannot be recognised and entered.
 * **Alternative 3:** Allow tutors to have names with special characters, especially commas.
     * Pros: More representative of various name types, especially those with commas in their names.
-    * Cons: Allowing too many special characters decreases the ability to locate and reference the tutors in future 
+    * Cons: Allowing too many special characters decreases the ability to locate and reference the tutors in the future 
       (e.g. ABC,123@!?:" should not be accepted as a valid name).
 
 ### List tutor feature
 
 The "List Tutor" feature allows users to view the list of existing tutors in the address book. Below, we provide
-an example usage scenario and a detailed description of how the add tutor mechanism behaves at each step.
+an example usage scenario and a detailed description of how the list tutor mechanism behaves at each step.
 
 The following shows the activity diagram from when a user executes the `list-t` command:
 
 ![Activity Diagram for list-t Command](images/ListTutorActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 tutor added.
 
@@ -242,8 +246,9 @@ The following sequence diagram shows how the above steps for list tutor operatio
 ![Interactions Inside the Logic Component for the `list-t` Command](images/ListTutorSequenceDiagram.png)
 
 #### Design rationale
+{:.no_toc}
 
-The `list-t` command was designed this way to ensure consistency with the previous `list` person command.
+The `list-t` command was designed this way to ensure consistency with the previous `list` command in AB3.
 
 ### Edit tutor feature 
 
@@ -253,28 +258,29 @@ The following shows the activity diagram from when a user executes the `edit-t` 
 
 ![Activity Diagram for edit-t Command](images/EditTutorActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 tutor added.
 
 Step 2. The user executes `list-t` to view all added tutors.
 
 Step 3. The user executes `edit-t 1 n/John Doe` to edit the first tutor's name in the list of tutors displayed. 
-The command is parsed in AddressBookParser.
+The command is parsed in `AddressBookParser`.
 
 Step 4. `EditTutorCommandParser` is created, and constructs an `EditPersonDescriptor` which describes the edited 
 `Person` (omitted in sequence diagram below for brevity). An `EditTutorCommand` object is then constructed with this 
 `EditPersonDescriptor` and the specified tutor index.
 
-Step 5. The `EditTutorCommand` object gets the specified person from the current filtered person list using the 
+Step 5. The `EditTutorCommand` object gets the specified `Person` from the current filtered person list using the 
 tutor index.
 
-Step 6. `EditTutorCommand` object then creates an edited person from the specified person and the editPersonDescriptor.
+Step 6. `EditTutorCommand` object then creates an edited `Person` from the specified `Person` and the `EditPersonDescriptor`.
 
-Step 7. `EditTutorCommand` object then calls the `setPerson` method in the `ModelManager` with the new edited person. 
-This method sets the specified `Person` in the model to be that edited person.
+Step 7. `EditTutorCommand` object then calls the `setPerson` method in the `ModelManager` with the new edited `Person`. 
+This method sets the specified `Person` in the model to be that edited `Person`.
 
-Step 8. Finally, the `EditTutorCommand` object updates the person list to display the edited person.
+Step 8. Finally, the `EditTutorCommand` object updates the person list to display the edited `Person`.
 
 The following sequence diagram shows how the above steps for edit tutor operation works:
 
@@ -287,14 +293,16 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
+
 **Aspect: Specifying which tutor to edit**
 - **Alternative 1 (current choice):** Using tutor index.
     - Pros: Using the tutor index provides a clear and unambiguous way for users to specify which tutor they want to 
       edit. The index corresponds directly to the position of the tutor in the displayed list, making it easy for users 
       to identify the target tutor.
-    - Pros: The use of tutor indices eliminates the potential challenge of dealing with long or complex names. Users do
+    - Pros: Using the tutor index eliminates the potential challenge of dealing with long or complex names. Users do
       not need to type out the entire name, which can be especially beneficial if a tutor has a lengthy or complicated name.
-    - Pros: The use of index aligns with the existing command structure, which is based on numeric indices for 
+    - Pros: Using the tutor index aligns with the existing command structure, which is based on numeric indices for 
       identifying and interacting with specific entries in the address book.
     - Cons: Users need to have knowledge of the specific index of the tutor they want to edit. This may require them to 
       first execute a `list-t` command to view the current list of tutors and their corresponding indices.
@@ -316,17 +324,18 @@ The following shows the activity diagram from when a user executes the `find-t` 
 
 ![Activity Diagram for find-t Command](images/FindTutorActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched.
 
-Step 2. The user executes `find-t John Doe` to search for tutors with the name "John Doe". The command is parsed in the 
-`AddressBookParser`.
+Step 2. The user executes `find-t John Doe` to search for tutors whose name contains "John" or "Doe. The command is 
+parsed in the `AddressBookParser`.
 
 Step 3. `FindTutorCommandParser` is created, and constructs a `NameContainsKeywordsPredicate` which matches for any of 
 the search keywords. A `FindTutorCommand` object is then constructed with this predicate.
 
-Step 4. The `LogicManager` calls the `execute` in `FindTutorCommand` which sets the predicate of the filtered persons 
+Step 4. The `LogicManager` calls the `execute` method in `FindTutorCommand` which sets the predicate of the filtered persons 
 list in `ModelManager` to be the predicate created earlier.
 
 Step 5. The result of the command execution is encapsulated as a `CommandResult` object which is returned back from 
@@ -345,6 +354,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Search criteria**
 - **Alternative 1 (current choice):** Only allowing users to search for tutors based on their names.
@@ -370,13 +380,14 @@ The following shows the activity diagram when a user executes the `delete-t` com
 
 ![Activity diagram for delete-t command](images/DeleteTutorActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 tutor added.
 
 Step 2. The user executes `list-t` to view all added tutors.
 
-Step 3. The user executes `delete-t 1` to delete the tutor with Tutor index 1 in the list of tutors displayed.
+Step 3. The user executes `delete-t 1` to delete the tutor with index 1 in the list of tutors displayed.
 The command is parsed in the `AddressBookParser`.
 
 Step 4. `DeleteTutorCommandParser` is created and gets the index of the tutor to be deleted.
@@ -385,7 +396,7 @@ A `DeleteTutorCommand` object is then constructed with the specified tutor index
 Step 5. The `DeleteTutorCommand` object gets the specified person from the current filtered person list using the tutor
 index.
 
-Step 6. The `DeleteTutorCommand` object then calls the `deletePerson` method in the ModelManager with the specified 
+Step 6. The `DeleteTutorCommand` object then calls the `deletePerson` method in the `ModelManager` with the specified 
 person to delete. This method deletes the specified `Person` in the model.
 
 Step 7. Finally, the `DeleteTutorCommand` object returns the `CommandResult`.
@@ -401,19 +412,20 @@ but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
-The `delete-t` command was designed this way to ensure consistency with the previous `delete` person command.
+{:.no_toc}
+
+The `delete-t` command was designed this way to ensure consistency with the previous `delete` command in AB3.
 
 **Aspect: Specifying which tutor to delete**
 - **Alternative 1 (current choice):** Using tutor index.
   - Pros: Using the tutor index provides a clear and unambiguous way for users to specify which tutor they want to 
     delete. The index corresponds directly to the position of the tutor in the displayed list, making it easy for 
     users to identify the target tutor.
-  - Pros: The use of tutor indices eliminates the potential challenge of dealing with long or complex names. Users do
-    not need to type out the entire name, which can be especially beneficial if a tutor 
-    has a lengthy or complicated name.
-  - Pros: The use of index aligns with the existing command structure, which is based on numeric indices for
+  - Pros: Using the tutor index eliminates the potential challenge of dealing with long or complex names. Users do
+    not need to type out the entire name, which can be especially beneficial if a tutor has a lengthy or complicated name.
+  - Pros: Using the tutor index aligns with the existing command structure, which is based on numeric indices for
     identifying and interacting with specific entries in the address book.
-  - Cons: Users need to have knowledge of the specific index of the tutor they want to edit. This may require them to
+  - Cons: Users need to have knowledge of the specific index of the tutor they want to delete. This may require them to
     first execute a `list-t` command to view the current list of tutors and their corresponding indices.
 - **Alternative 2:** Using tutor name.
   - Pros: Allowing users to delete a tutor by specifying their name provides a more natural and intuitive method, as
@@ -425,11 +437,19 @@ The `delete-t` command was designed this way to ensure consistency with the prev
   - Cons: Names are case-sensitive. This means that users need to accurately input the name with the correct
     capitalization, which can add an extra layer of precision required from the user.
 
-### Add Schedule Feature
+### Add schedule feature
 
-#### Implementation Details
+The “Add Schedule” feature allows users to add a new schedule to the address book. Below, we provide an example usage
+scenario and a detailed description of how the add schedule mechanism behaves at each step.
 
-The add schedule feature is facilitated by `AddScheduleCommand`. It extends `Command` with the necessary implementation to add a schedule to a `Model`. Additionally, it implements the following operation:
+The following shows the activity diagram from when a user executes the `add-s` command:
+![AddScheduleActivityDiagram](images/AddScheduleActivityDiagram.png)
+
+#### Implementation details
+{:.no_toc}
+
+The add schedule feature is facilitated by `AddScheduleCommand`. It extends `Command` with the necessary implementation 
+to add a schedule to a `Model`. Additionally, it implements the following operation:
 
 * `AddScheduleCommand#execute(Model)` — Adds the schedule to the `Model`.
 
@@ -437,28 +457,36 @@ This operation is exposed in the abstract `Command` class as an abstract method.
 
 Given below is an example usage scenario and how the add schedule command behaves.
 
-The user executes `add-s 1 s/2023-09-15T09:00:00 e/2023-09-15T11:00:00` command. The `AddScheduleCommandParser` will be initialized to parse the user input to create a `AddScheduleCommand` with a `Index`, `StartTime` and `EndTime` representing the user's input.
+Step 1. The user has the application launched with at least 1 tutor added.
 
-The `AddScheduleCommand#exceute(Model)` will perform the following checks in this order to ensure that the `Schedule` can be added to the `Model`:
+Step 2. The user executes `add-s 1 st/2023-09-15T09:00 et/2023-09-15T11:00` command.
+
+Step 3. The `AddScheduleCommandParser` will be initialized to parse the user input to create a `AddScheduleCommand` 
+with a `Index`, `StartTime` and `EndTime` representing the user's input.
+
+Step 4. The `AddScheduleCommand#execute(Model)` will perform the following checks in this order to ensure that the
+`Schedule` can be added to the `Model`:
 1. The `Index` is valid.
 2. A valid schedule can be created with the given `Index`, `StartTime` and `EndTime`.
-    <div markdown="span" class="alert alert-info">:information_source: **Note:** A `Schedule` is considered valid if its start time is before its end time and both start time and end time falls on the same day. This is enforced by the constructor of the `Schedule` class, it throws an `IllegalArgumentException` if it is not valid.
+    <div markdown="span" class="alert alert-info">:information_source: **Note:** A `Schedule` is considered valid if 
+   its start time is before its end time and both start time and end time falls on the same day. This is enforced by 
+   the constructor of the `Schedule` class, it throws an `IllegalArgumentException` if it is not valid.
 
     </div>
 3. Executing this command would not result in a duplicate schedule in the `Model`.
-    <div markdown="span" class="alert alert-info">:information_source: **Note:** A `Schedule` is considered a duplicate if it belongs to the same `Person` and have the same `StartTime` and `EndTime` as an existing schedule in the `Model`.
+    <div markdown="span" class="alert alert-info">:information_source: **Note:** A `Schedule` is considered a duplicate 
+   if it belongs to the same `Person` and have the same `StartTime` and `EndTime` as an existing schedule in the `Model`.
 
     </div>
 4. Executing this command would not result in a clashing schedule for the tutor specified by `Index` in the `Model`.
-    <div markdown="span" class="alert alert-info">:information_source: **Note:** A `Schedule` is considered a clashing if it belongs to the same `Person` and have overlapping times. This is checked by `Schedule#isClashing(Schedule)`.
+    <div markdown="span" class="alert alert-info">
+   :information_source: **Note:** A `Schedule` is considered a clashing if it belongs to the same `Person` and have 
+   overlapping times. This is checked by `Schedule#isClashing(Schedule)`.
 
     </div>
 
-If any of these checks fail a `CommandException` with an appropriate error message will be thrown. Otherwise, it will create a `Schedule` and use `Model#addSchedule` to add the schedule to the `Model`.
-
-The following shows the activity diagram from when a user executes the `add-s` command:
-
-![AddScheduleActivityDiagram](images/AddScheduleActivityDiagram.png)
+If any of these checks fail, a `CommandException` with an appropriate error message will be thrown. Otherwise, it will 
+create a `Schedule` and use `Model::addSchedule` to add the schedule to the `Model`.
 
 The following sequence diagram shows how the operation works:
 
@@ -469,18 +497,19 @@ The following sequence diagram shows how the operation works:
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Checking for clashing schedule:**
 
 * **Alternative 1 (current choice):** Perform the check in `AddScheduleCommand`.
     * Pros: Easy to implement.
-    * Cons: Have to directly access schedules in the `UniqueScheduleList` creating dependencies.
+    * Cons: Have to directly access schedules in the `UniqueScheduleList`, creating dependencies.
     * Cons: Can be inefficient, as we have to iterate over all schedules in the schedule list.
 
 * **Alternative 2:** Perform the check in `UniqueScheduleList`.
     * Pros: Consistent throughout the system as this check is enforced on all schedules being added to the `UniqueScheduleList` regardless of where it is being added from.
     * Pros: Can be optimised to use more efficient searching algorithms like binary search if the implementation of the underlying list is sorted.
-    * Cons: Every schedule in the system have to adhere to that. For eg., if we want to allow the user to override such constraints it would not be possible without modifying the functionality of the list.
+    * Cons: Every schedule in the system have to adhere to that. For e.g., if we want to allow the user to override such constraints it would not be possible without modifying the functionality of the list.
 
 **Aspect: Checking for valid schedule:**
 
@@ -500,29 +529,30 @@ usage scenario and a detailed description of how the edit schedule mechanism beh
 
 ![EditScheduleActivityDiagram](images/EditScheduleActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 schedule added.
 
 Step 2. The user executes `list-s` to view all added schedules.
 
 Step 3. The user executes `edit-s 1 st/2023-09-15T09:00` to edit the first schedule's start time in the list of
-schedules displayed. The command is parsed in AddressBookParser.
+schedules displayed. The command is parsed in `AddressBookParser`.
 
-Step 4. EditScheduleCommandParser is created, and constructs an `EditScheduleDescriptor` which describes the edited
-`Schedule`. An EditScheduleCommand object is then constructed with this `EditScheduleDescriptor` and the
+Step 4. `EditScheduleCommandParser` is created, and constructs an `EditScheduleDescriptor` which describes the edited
+`Schedule`. An `EditScheduleCommand` object is then constructed with this `EditScheduleDescriptor` and the
 specified schedule index.
 
-Step 5. The EditScheduleCommand object gets the specified schedule from the current filtered schedule list using the
+Step 5. The `EditScheduleCommand` object gets the specified `Schedule` from the current filtered schedule list using the
 schedule index.
 
-Step 6. EditScheduleCommand object then creates an edited schedule from the specified schedule and the
+Step 6. `EditScheduleCommand` object then creates an edited `Schedule` from the specified `Schedule` and the
 `EditScheduleDescriptor`.
 
-Step 7. EditScheduleCommand object then calls the setSchedule method in the ModelManager with the new edited schedule.
-This method sets the specified `Schedule` in the model to be that edited schedule.
+Step 7. `EditScheduleCommand` object then calls the `setSchedule` method in the `ModelManager` with the new edited `Schedule`.
+This method sets the specified `Schedule` in the model to be that edited `Schedule`.
 
-Step 8. Finally, the EditScheduleCommand object updates the schedule list to display the edited schedule.
+Step 8. Finally, the `EditScheduleCommand` object updates the schedule list to display the edited `Schedule`.
 
 The following sequence diagram shows how the above steps for edit schedule operation works:
 
@@ -535,6 +565,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Setting of schedule status**
 * **Alternative 1:** Use an additional prefix to edit the status of a schedule. 
@@ -563,26 +594,27 @@ usage scenario and a detailed description of how the list schedule mechanism beh
 
 ![ListScheduleActivityDiagram](images/ListScheduleActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 schedule added.
 
 Step 2. The user executes `list-s` to view all added schedules.
 
-Step 3. The user can also choose to execute `list-s 1 m/0` where the index and `m/` status are optional parameters.
+Step 3. The user can also choose to execute `list-s 1 m/0` where the `Index` and `Status` are optional parameters.
 
 Step 4. The `ListScheduleCommandParser` will be initialised to parse the user input, checking for `Index` and `Status`. If they are provided but invalid, it will throw a `ParseException`.
 
 Step 5. The `ListScheduleCommandParser` will then create a `ListScheduleCommand` with a `Index` and `Status` representing the user's input.
 
-Step 6. If `Index` is a valid integer, but it is not within the schedule list of indexes, `ListScheduleCommand::execute` will return `CommandException` 
+Step 6. If `Index` is a valid integer, but it is not within the schedule list of indexes, `ListScheduleCommand::execute` will return `CommandException` .
 
 Step 7. `ListScheduleCommand::execute` then creates `TutorPredicate`, `StatusPredicate` or both predicates, depending on what parameters are present in the user input for `Index` and `Status` respectively.
 
 Step 8. `ListScheduleCommand::execute` then calls `ModelManager::getFilteredScheduleList` with the predicate as the argument.
-This method updates the list of `Schedule` in the model according to the predicate conditions and filters them.
+This method updates the list of schedule in the model according to the predicate conditions and filters them.
 
-Step 9. Finally, the `ListScheduleCommand` object updates the schedule list to display the filtered schedule.
+Step 9. Finally, the `ListScheduleCommand` object updates the schedule list to display the filtered schedules.
 
 The following sequence diagram shows how the above steps for list schedule operation works:
 
@@ -595,6 +627,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Filtering schedule by tutor name**
 * **Alternative 1:** Use an additional prefix to filter the list of schedules by tutor name.
@@ -612,17 +645,18 @@ The following shows the activity diagram from when a user executes the `find-s` 
 
 ![FindScheduleActivityDiagram](images/FindScheduleActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched.
 
-Step 2. The user executes `find-s John Doe` to search for tutors with the name "John" or "Doe". The command is parsed in the
+Step 2. The user executes `find-s John Doe` to search for tutors whose name contains "John" or "Doe. The command is parsed in the
 `AddressBookParser`.
 
 Step 3. `FindScheduleCommandParser` is created, and constructs a `TutorNameContainsKeywordsPredicate` which matches for any of
 the search keywords. A `FindScheduleCommand` object is then constructed with this predicate.
 
-Step 4. The `LogicManager` calls the `execute()` method in `FindScheduleCommand` which sets the predicate of the filtered schedule
+Step 4. The `LogicManager` calls the `execute` method in `FindScheduleCommand` which sets the predicate of the filtered schedule
 list in `ModelManager` to be the predicate created earlier.
 
 Step 5. The result of the command execution is encapsulated as a `CommandResult` object which is returned back from
@@ -641,6 +675,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design Rationale
+{:.no_toc}
 
 **Aspect: Search criteria**
 - **Alternative 1 (current choice):** Only allowing users to search for schedules based on their names.
@@ -665,7 +700,8 @@ The following shows the activity diagram when a user executes the `mark` command
 
 ![MarkScheduleActivityDiagram](images/MarkScheduleActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 schedule added.
 
@@ -680,18 +716,18 @@ the given `Index` and `Status` representing the user's input.
 Step 5. The `MarkScheduleCommand#execute(Model)` will perform the following checks in this order to ensure that the
 schedule can be safely marked as completed in the Model:
 
-- The `Index` is a valid integer.
-- The `Index` is not out of bounds (within the range of displayed schedule list's size).
-- The `Status` is a valid Status (either 0 for missed or 1 for completed).
+1. The `Index` is a valid integer.
+2. The `Index` is not out of bounds (within the range of displayed schedule list's size).
+3. The `Status` is valid (either 0 for missed or 1 for completed).
 
 Step 6. The `execute` method then calls `Model::getFilteredScheduleList` and gets the specified `Schedule` using the
 `Index` given.
 
-Step 7. Once the checks are successful, the method then creates an edited schedule from the original schedule with its
+Step 7. Once the checks are successful, the method then creates an edited `Schedule` from the original `Schedule` with its
 status set to completed.
 
-Step 8. The method then calls the `setSchedule` method in the `ModelManager` with the new edited schedule. This sets the
-specified `Schedule` in the model to be that edited schedule with completed status.
+Step 8. The method then calls the `setSchedule` method in the `ModelManager` with the new edited `Schedule`. This sets the
+specified `Schedule` in the model to be that edited `Schedule` with completed status.
 
 Step 9. The result of the command execution is encapsulated as a `CommandResult` object which is returned back from
 `Logic`.
@@ -707,6 +743,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Usage of the `pending` status**
 - **Alternative 1 (current choice):** Users unable to mark a schedule as `pending`.
@@ -715,27 +752,27 @@ the lifeline reaches the end of diagram.
   - Pros: Users only need to be aware of the completed and missed status, simplifying the command's usage.
   - Cons: The user must use a distinct command to unmark schedules with a status set.
 - **Alternative 2:** Users able to mark a schedule as `pending`.
-  - Pros: Users only need to be familiar with the mark command, which can toggle between completed, missed, and
+  - Pros: Users only need to be familiar with the `mark` command, which can toggle between completed, missed, and
     pending statuses. This may lead to a more streamlined user experience.
   - Cons: Introducing a third status option complicates the management of schedule statuses. Users and developers
     alike must account for an additional state, potentially increasing the system's complexity.
-  - Cons: The definition and usage of the "pending" status may vary among users, potentially leading to ambiguity in
+  - Cons: The definition and usage of the `pending` status may vary among users, potentially leading to ambiguity in
     its interpretation.
 
 **Aspect: Format of schedule status**
-- **Alternative 1 (current choice):** Users input integers 0 or 1 to mark a schedule as `missed` or `completed`.
+- **Alternative 1 (current choice):** Users input integers `0` or `1` to mark a schedule as `missed` or `completed`.
   - Pros: Using integers provides a clear and unambiguous way for users to specify which status they want to
     mark for the specified schedule. The index corresponds directly to the schedule status of `missed`, or `completed`,
     making it easy to identify the correct schedule status.
-  - Pros: The use of indices eliminates the potential challenge of dealing with case-sensitive words. Users do
+  - Pros: The use of integers eliminates the potential challenge of dealing with case-sensitive words. Users do
     not need to type out the exact status word by word, which can be especially beneficial if a user is not a very
     good at typing.
-  - Pros: The use of indices aligns with the existing command structure, which is based on numeric indices for
+  - Pros: The use of integers aligns with the existing command structure, which is based on numeric indices for
     identifying and interacting with specific entries in the address book.
   - Cons: Users need to have knowledge of the specific integer representing the schedule status they want to mark. 
 - **Alternative 2:** Users input the exact schedule status `missed` or `completed` in words.
   - Pros: Allowing users to mark a schedule by specifying their schedule status provides a more natural and intuitive 
-    method, as users are likely more familiar with status than numeric indices.
+    method, as users are likely more familiar with status than numeric integers.
   - Cons: If a user provides an incorrect or misspelled status, the application would need to handle error cases and
     provide appropriate feedback to guide the user.
   - Cons: Typing out schedule status in words are case-sensitive. This means that users need to accurately input the 
@@ -749,7 +786,8 @@ The following shows the activity diagram from when a user executes the `unmark` 
 
 ![UnmarkScheduleActivityDiagram](images/UnmarkScheduleActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched with at least 1 schedule marked as completed or missed.
 
@@ -762,19 +800,19 @@ Step 4. `UnmarkScheduleCommandParser` is initialized to parse the user input to 
 the given `Index` representing the user's input.
 
 Step 5. The `UnmarkScheduleCommand#execute(Model)` will perform the following checks in this order to ensure that the 
-schedule can be safely unmarked in the Model:
+`Schedule` can be safely unmarked in the Model:
 
-- The `Index` is a valid integer.
-- The `Index` is not out of bounds (within the range of the displayed schedule list's size).
+1. The `Index` is a valid integer.
+2. The `Index` is not out of bounds (within the range of the displayed schedule list's size).
 
 Step 6. The `execute` method then calls `Model::getFilteredScheduleList` and gets the specified `Schedule` using the 
 `Index` given.
 
-Step 7. Once the checks are successful, the method then creates an edited schedule from the original schedule with its
-status set to pending.
+Step 7. Once the checks are successful, the method then creates an edited `Schedule` from the original `Schedule` with its
+`Status` set to pending.
 
-Step 8. The method then calls the `setSchedule` method in the `ModelManager` with the new edited schedule. This sets the 
-specified `Schedule` in the model to be that edited schedule with pending status.
+Step 8. The method then calls the `setSchedule` method in the `ModelManager` with the new edited `Schedule`. This sets the 
+specified `Schedule` in the model to be that edited `Schedule` with pending status.
 
 Step 9. The result of the command execution is encapsulated as a `CommandResult` object which is returned back from
 `Logic`.
@@ -790,6 +828,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Existence of unmark command**
 - **Alternative 1 (current choice):** Separate `unmark` command for unmarking schedules.
@@ -805,35 +844,55 @@ the lifeline reaches the end of diagram.
     - Cons: The definition and usage of the "pending" status may vary among users, potentially leading to ambiguity in 
       its interpretation.
 
-### Delete Schedule Feature
-#### Implementation Details
+### Delete schedule feature
+
+The "Delete Schedule" feature allows users to delete an existing schedule in the address book given a schedule index.
+Below, we provide an example usage scenario and a detailed description of how the delete schedule mechanism behaves at
+each step.
+
+The following shows the activity diagram when a user executes the `delete-s` command:
+
+![Activity diagram for delete-s command](images/DeleteScheduleActivityDiagram.png)
+
+#### Implementation details
+{:.no_toc}
+
 The delete schedule feature is facilitated by `DeleteScheduleCommand`, which extends from `Command` with the necessary implementation to delete a schedule by a given index.
 The following operation is exposed in the abstract `Command` class as an abstract method:
 * `DeleteScheduleCommand#execute(Model)` - Deletes the schedule from the `Model` using the given index.
 
-The following shows the activity diagram in which a user executes the `delete-s` command:
-
-![Activity diagram for delete-s command](images/DeleteScheduleActivityDiagram.png)
-
 Given below is an example scenario on how the delete schedule command behaves:
-1. The user has the application launched with at least 1 schedule added.
-2. The user executes `list-s` to view the list of schedules.
-3. The user executes `delete-s 1` command, which deletes the schedule with index 1 shown in the list of schedules displayed. The command is parsed in the `AddressBookParser`.
-4. `DeleteScheduleCommandParser` is initialized to parse the user input to create a `DeleteSchedulecommand` with the given `Index` representing the user's input.
-5. The `DeleteScheduleCommand#execute(Model)` will perform the following checks in this order to ensure that `Schedule` can be safely deleted from the `Model`:
-   - The `Index` is a valid integer.
-   - The `Index` is not out of bounds.
-     <div markdown="span" class="alert alert-info">:information_source: **Note:** An `Index` is considered valid if it's within the range of the schedule list's size. This is enforced by throwing an `CommandException` if it is not valid.
-       </div>
-6. The `execute()` will then call `Model::getFilteredScheduleList` and get the specified Schedule using the `Index` given.
-7. Once the checks are successful, the method then calls `Model::deleteSchedule` in `ModelManager` to delete the specified `Schedule` in the model.
-8. Finally, the `DeleteScheduleCommand` returns the `CommandResult`.
+
+Step 1. The user has the application launched with at least 1 schedule added.
+
+Step 2. The user executes `list-s` to view the list of schedules.
+
+Step 3. The user executes `delete-s 1` command, which deletes the schedule with index 1 shown in the list of schedules displayed. The command is parsed in the `AddressBookParser`.
+
+Step 4. `DeleteScheduleCommandParser` is initialized to parse the user input to create a `DeleteSchedulecommand` with the given `Index` representing the user's input.
+
+Step 5. The `DeleteScheduleCommand#execute(Model)` will perform the following checks in this order to ensure that `Schedule` can be safely deleted from the `Model`:
+
+1. The `Index` is a valid integer.
+2. The `Index` is not out of bounds.
+<div markdown="span" class="alert alert-info">
+    :information_source: **Note:** An `Index` is considered valid if it's within the range of the schedule list's size. This is enforced by throwing an `CommandException` if it is not valid.
+</div>
+
+Step 6. The `execute` method will then call `Model::getFilteredScheduleList` and get the specified Schedule using the `Index` given.
+
+Step 7. Once the checks are successful, the method then calls `Model::deleteSchedule` in `ModelManager` to delete the specified `Schedule` in the model.
+
+Step 8. Finally, the `DeleteScheduleCommand` returns the `CommandResult`.
 
 The following sequence diagram shows how the above steps for delete schedule operation works, taking `execute("delete-s 1")` API call as an example.
 
 ![Sequence diagram for delete-s command](images/DeleteScheduleSequenceDiagram.png)
+
 #### Design rationale
-The `delete-s` command was designed this way to ensure consistency with the previous delete person command.
+{:.no_toc}
+
+The `delete-s` command was designed this way to ensure consistency with the previous `delete` in AB3.
 
 ### Show calendar feature
 
@@ -843,7 +902,8 @@ The following shows the activity diagram from when a user executes the `show` co
 
 ![Activity Diagram for show Command](images/ShowCalendarActivityDiagram.png)
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user has the application launched.
 
@@ -870,6 +930,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Defining which tutor to display for calendar**
 - **Alternative 1 (current choice):** Show calendar for all tutors
@@ -893,7 +954,8 @@ the lifeline reaches the end of diagram.
 The "Change Theme" feature allows users to change the colour theme of the address book. Below, we provide an example 
 usage scenario and a detailed description of how the change theme mechanism behaves at each step.
 
-#### Implementation
+#### Implementation details
+{:.no_toc}
 
 Step 1. The user launches the application for the first time.
 
@@ -928,6 +990,7 @@ the lifeline reaches the end of diagram.
 </div>
 
 #### Design rationale
+{:.no_toc}
 
 **Aspect: Parsing the NEW_THEME**
 - **Alternative 1 (current choice):** New theme is parsed and the filepath is allocated in `ThemeCommandParser`.
@@ -946,17 +1009,19 @@ the lifeline reaches the end of diagram.
     from `MainWindow` directly. Thus, `CommandResult` does not need another constructor and getter method.
   - Cons: `MainWindow` has to parse arguments.
 
-### Split MainWindow to display both tutor and schedule list together
+### Split `MainWindow` to display both tutor and schedule list together
 
 The main window of TutorConnect now displays both the tutor and schedule list side by side to give users an overview
 and provide easy reference when inputting commands to update the tutors or schedules.
 
 #### Implementation details
+{:.no_toc}
 
 To display both the tutor and schedule list together, another panel `ListsPanel` is used to combine both the 
-`personListPanel` and `scheduleListPanel` together in order to display them as a single panel in the `MainWindow`.
+`PersonListPanel` and `ScheduleListPanel` together in order to display them as a single panel in the `MainWindow`.
 
 #### Design rationale
+{:.no_toc}
 
 Initially, the list of tutors and schedules are individual panels and the `MainWindow` can only display one at a time.
 Therefore, users have to enter `list-t` or `list-s` commands to alternate between panels to refer when entering
@@ -970,11 +1035,13 @@ reference to both lists at the same time, providing convenience for users.
 
 The list of schedules is sorted to be more organised and easier to navigate for users.
 
-#### Implementation Details
+#### Implementation details
+{:.no_toc}
 
-The schedules are sorted by implementing the `Comparable` interface and its required `compareTo()` method.
+The schedules are sorted by implementing the `Comparable` interface and its required `compareTo` method.
 
 #### Design rationale
+{:.no_toc}
 
 `Schedule`s are sorted by `StartTime` as start time is what tuition centre coordinators are most concerned with.
 
@@ -1194,19 +1261,15 @@ otherwise.
 
 **Extensions**
 
-* 1a. The list is empty.
+* 1a. The given index is invalid.
 
-  Use case ends.
-
-* 1b. The given index is invalid.
-
-  * 1b1. TutorConnect shows an error message.
+  * 1a1. TutorConnect shows an error message.
 
     Use case resumes at step 1.
 
-* 1c. The schedule status parameters is invalid.
+* 1b. The schedule status parameters is invalid.
 
-  * 1c1. TutorConnect shows an error message.
+  * 1b1. TutorConnect shows an error message.
 
     Use case resumes at step 1.
 
@@ -1220,13 +1283,6 @@ otherwise.
 2.  TutorConnect shows a list of schedules filtered by keyword entered
 
     Use case ends.
-
-**Extensions**
-
-* 2a. The list is empty.
-
-  Use case ends.
-
 
 #### **Use case: Delete a schedule**
 {:.no_toc}
@@ -1680,7 +1736,7 @@ scheduleToEdit's start and end times are earlier than the current datetime.
 
 If this validation fails, a `CommandException` with a clear and descriptive error message should be thrown.
 
-### Streamline `datetime` input
+### Streamline datetime input
 In the current implementation, the users have to enter `yyyy-MM-ddTHH:mm` each time for both `StartTime` and `EndTime`.
 However, since a `Schedule` is not allowed to start and end on different days, the user is unnecessarily repeating the
 input `yyyy-MM-dd`. This resulted in a command format that is longer than necessary. We plan to streamline the command 
@@ -1693,7 +1749,7 @@ prefix `d/` which will parse user input in the `yyyy-MM-dd` format into a `Date`
 
 For example, any command that uses the `st/` or `et/` prefix will now use `... d/yyyy-MM-dd st/HH:mm et/HH:m` instead.
 
-### Enhance flexibility of `datetime` inputs
+### Enhance flexibility of datetime inputs
 In the current implementation, users can only enter datetime in this `yyyy-MM-ddTHH:mm` format. This format can be
 restrictive as it requires leading zeroes and `-` as a separator. To enhance user experience, the input for datetime 
 related parameters should be able to handle most frequently used formats like `2023/1/1` and `10:00pm`.
@@ -1741,19 +1797,15 @@ find and locate a particular schedule.
 The schedules would be sorted first by `StartTime`, then by `EndTime`, and finally alphabetically by the tutor's name.
 This would make the schedule list more organised, making it easier to use and navigate for the user.
 
-### UI for calendar to use colours to reflect status of schedules
-In the calendar view, incorporating schedule colors to represent their respective statuses can enhance user 
-intuitiveness.
+### Help window flickering when displayed 
+After moving the help window to the left, subsequent display of the help window will have a flickering animation before
+the window settles in the center of the screen.
 
 **Proposed implementation**
 
-In `CalendarCard.java`, the background color of the calendar card will be determined based on schedule status: green 
-for completed, red for missed, and yellow for pending (please note that these colors are not finalised).
-
-To differentiate between rows in the calendar, an alternating shading of green, red, and yellow will be applied.
-
-Additionally, each calendar card will have a visible border to separate it from adjacent schedule cards on 
-the same row.
+In `HelpWindow.java`, the window should be centred on instantiation with `getRoot().centerOnScreen()`.
+Additionally, the `show` method should be modified, to center first before showing the window, essentially swapping the
+order of the two.
 
 ### Allow partial name search for find command
 
@@ -1780,7 +1832,7 @@ create the `find` command object with the updated predicate.
 This would then be used in the `execute` method of the `find` command object to get the filtered tutor 
 or schedule list with part of their names matching the user input.
 
-### List Schedule by Pending Status
+### List schedule by pending status
 In our current implementation, `list-s` only filters schedule by `COMPLETED` or `MISSED` status. Any schedules that have 
 not been assigned one of these statuses are categorised as unmarked, and it's important to include them in the list-s results.
 

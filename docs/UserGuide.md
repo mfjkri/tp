@@ -1204,24 +1204,24 @@ Commands reference: [add-s](#adding-a-schedule-add-s), [edit-s](#editing-a-sched
 
 ## Command Summary
 
-| Action              | Format, Examples                                                                                           |
-|---------------------|------------------------------------------------------------------------------------------------------------|
-| **Add Tutor**       | `add-t n/NAME p/PHONE NUMBER e/EMAIL` <br> e.g., `add-t n/John Doe p/98765432 e/johnd@example.com`         |
-| **Edit Tutor**      | `edit-t TUTOR_INDEX n/NAME p/PHONE_NUMBER e/EMAIL`<br> e.g.,`edit-t 2 n/James Lee e/jameslee@example.com`  |
-| **List Tutor**      | `list-t`                                                                                                   |
-| **Delete Tutor**    | `delete-t TUTOR_INDEX`<br> e.g., `delete-t 3`                                                              |
-| **Find Tutor**      | `find-t KEYWORD [MORE_KEYWORDS]`<br> e.g., `find-t James Jake`                                             |
-| **Add Schedule**    | `add-s TUTOR_INDEX st/START_TIME et/END_TIME` <br> e.g., `add-s 1 st/2023-09-15T09:00 et/2023-09-15T11:00` |
-| **Edit Schedule**   | `edit-s SCHEDULE_INDEX [st/START_TIME] [et/END_TIME]` <br> e.g., `edit-s 1 st/2023-09-15T13:00`            |
-| **List Schedule**   | `list-s`, `list-s TUTOR_INDEX m/SCHEDULE STATUS` <br> e.g., `list-s 1 m/0`                                 |
-| **Mark Schedule**   | `mark SCHEDULE_INDEX m/SCHEDULE STATUS`<br> e.g., `mark 3 m/0`                                             |
-| **Unmark Schedule** | `unmark SCHEDULE_INDEX`<br> e.g., `unmark 3`                                                               |
-| **Delete Schedule** | `delete-s SCHEDULE_INDEX`<br> e.g., `delete-s 3`                                                           |
-| **Find Schedule**   | `find-s KEYWORD [MORE_KEYWORDS]`<br> e.g., `find-s James Jake`                                             |
-| **View Calendar**   | `show DATE` <br> e.g., `show 2023-09-15`                                                                   |
-| **Change Theme**    | `theme NEW_THEME` <br> e.g., `theme dark`                                                                  |
-| **Clear**           | `clear`                                                                                                    |
-| **Help**            | `help`                                                                                                     |
-| **Exit**            | `exit`                                                                                                     |
+| Action                                                  | Format, Examples                                                                                           |
+|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **[Add Tutor](#adding-a-tutor-add-t)**                  | `add-t n/NAME p/PHONE NUMBER e/EMAIL` <br> e.g., `add-t n/John Doe p/98765432 e/johnd@example.com`         |
+| **[Edit Tutor](#editing-a-tutor-edit-t)**               | `edit-t TUTOR_INDEX n/NAME p/PHONE_NUMBER e/EMAIL`<br> e.g.,`edit-t 2 n/James Lee e/jameslee@example.com`  |
+| **[List Tutor](#listing-all-tutors-list-t)**            | `list-t`                                                                                                   |
+| **[Delete Tutor](#deleting-a-tutor-delete-t)**          | `delete-t TUTOR_INDEX`<br> e.g., `delete-t 3`                                                              |
+| **[Find Tutor](#locating-tutors-by-name-find-t)**       | `find-t KEYWORD [MORE_KEYWORDS]`<br> e.g., `find-t James Jake`                                             |
+| **[Add Schedule](#adding-a-schedule-add-s)**            | `add-s TUTOR_INDEX st/START_TIME et/END_TIME` <br> e.g., `add-s 1 st/2023-09-15T09:00 et/2023-09-15T11:00` |
+| **[Edit Schedule](#editing-a-schedule-edit-s)**         | `edit-s SCHEDULE_INDEX [st/START_TIME] [et/END_TIME]` <br> e.g., `edit-s 1 st/2023-09-15T13:00`            |
+| **[List Schedule](#listing-all-schedules-list-s)**      | `list-s`, `list-s TUTOR_INDEX m/SCHEDULE STATUS` <br> e.g., `list-s 1 m/0`                                 |
+| **[Mark Schedule](#marking-a-schedule-mark)**           | `mark SCHEDULE_INDEX m/SCHEDULE STATUS`<br> e.g., `mark 3 m/0`                                             |
+| **[Unmark Schedule](#unmarking-a-schedule-unmark)**     | `unmark SCHEDULE_INDEX`<br> e.g., `unmark 3`                                                               |
+| **[Delete Schedule](#deleting-a-schedule-delete-s)**    | `delete-s SCHEDULE_INDEX`<br> e.g., `delete-s 3`                                                           |
+| **[Find Schedule](#locating-schedules-by-name-find-s)** | `find-s KEYWORD [MORE_KEYWORDS]`<br> e.g., `find-s James Jake`                                             |
+| **[View Calendar](#viewing-calendar-show)**             | `show DATE` <br> e.g., `show 2023-09-15`                                                                   |
+| **[Change Theme](#changing-theme-theme)**               | `theme NEW_THEME` <br> e.g., `theme dark`                                                                  |
+| **[Clear](#clearing-all-data-clear)**                   | `clear`                                                                                                    |
+| **[Help](#opening-the-help-window-help)**               | `help`                                                                                                     |
+| **[Exit](#exiting-the-program-exit)**                   | `exit`                                                                                                     |
 
 [Back To Top](#table-of-contents)

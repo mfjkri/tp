@@ -8,18 +8,26 @@ start
 'Since the beta syntax does not support placing the condition outside the
  'diamond we place it as the true branch instead.
 
-if () then ([have index])
-    if() then ([numeric index])
-        if () then ([index within range])
-            :Delete schedule in Addressbook;
+if () then ([input is valid])
+    :Construct DeleteScheduleCommand object;
+    :Return back to LogicManager;
+    :LogicManager executes DeleteScheduleCommand;
+    if () then ([have index])
+        if() then ([numeric index])
+            if () then ([index within range])
+                :Delete schedule in Addressbook;
+            else ([else])
+             :ErrorInvalidScheduleDisplayedIndex;
+            endif
         else ([else])
-         :ErrorInvalidScheduleDisplayedIndex;
+         :ErrorInvalidCommandFormat;
         endif
     else ([else])
      :ErrorInvalidCommandFormat;
     endif
 else ([else])
- :ErrorInvalidCommandFormat;
+    :Display error message;
+
 endif
 stop
 @enduml

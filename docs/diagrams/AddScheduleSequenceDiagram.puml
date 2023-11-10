@@ -5,8 +5,8 @@ skinparam ArrowFontStyle plain
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
-participant ":AddScheduleCommandParser" as AddScheduleCommandParser LOGIC_COLOR
-participant "add-s:AddScheduleCommand" as AddScheduleCommand LOGIC_COLOR
+participant ":AddSchedule\nCommandParser" as AddScheduleCommandParser LOGIC_COLOR
+participant "add-s:AddSchedule\nCommand" as AddScheduleCommand LOGIC_COLOR
 participant "result:CommandResult" as CommandResult LOGIC_COLOR
 
 end box
@@ -15,10 +15,10 @@ box Model MODEL_COLOR_T1
 participant ":Model" as Model MODEL_COLOR
 participant "s:Schedule" as Schedule MODEL_COLOR
 end box
-[-> LogicManager : execute(String)
+[-> LogicManager : execute("add-s 1\nst/2023-09-15T09:00\n  et/2023-09-15T11:00")
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand(String)
+LogicManager -> AddressBookParser : parseCommand("add-s 1\nst/2023-09-15T09:00\n  et/2023-09-15T11:00")
 activate AddressBookParser
 
 create AddScheduleCommandParser
@@ -29,7 +29,7 @@ AddScheduleCommandParser --> AddressBookParser
 deactivate AddScheduleCommandParser
 
 
-AddressBookParser -> AddScheduleCommandParser : parse(String)
+AddressBookParser -> AddScheduleCommandParser : parse("1 st/2023-09-15T09:00\n               et/2023-09-15T11:00")
 activate AddScheduleCommandParser
 
 create AddScheduleCommand
