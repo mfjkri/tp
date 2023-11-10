@@ -167,6 +167,8 @@ Once you're ready to start using TutorConnect for your tuition centre, you can e
 
 Yay! Now it's time to get started with TutorConnect!
 
+<div style="page-break-after: always;"></div>
+
 ### Adding your first tutor
 
 ![add-t](images/tutorial/add-t.png)
@@ -178,6 +180,8 @@ Here is how you would use the [**add-t**](#adding-a-tutor-add-t) command to add 
 1. Simply type `add-t n/John Doe p/91234567 e/johnd@example.com` into the command box
 2. Hit enter
 3. Voila! John Doe is now in TutorConnect
+
+<div style="page-break-after: always;"></div>
 
 ### Adding your first schedule
 
@@ -195,6 +199,8 @@ Here is how to use the [**add-s**](#adding-a-schedule-add-s) command to assign t
 2. Simply type `add-s 1 st/2023-10-01T09:00 et/2023-10-01T11:00` into the command box
 3. Hit enter
 4. Tada! John Doe now has a schedule on **1 October 2023** from **9AM to 11AM**
+
+<div style="page-break-after: always;"></div>
 
 ### Marking your schedule as completed
 
