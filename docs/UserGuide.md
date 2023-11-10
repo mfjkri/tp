@@ -941,7 +941,7 @@ Type in `theme blue`.
 
 Wow! A whole new colour scheme.
 
-![change theme](images/changeTheme.png)
+<img src="images/changeTheme.png" height="400px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -1024,7 +1024,7 @@ Type in `help` and press enter.
 Is that a bird? Is that a plane?
 Nope, it's the help window!
 
-![help window](images/helpWindow.png)
+<img src="images/helpWindow.png" height="400px">
 
 <div markdown="block" class="alert alert-success">
 
