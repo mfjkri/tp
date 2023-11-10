@@ -963,6 +963,8 @@ Wow! A whole new colour scheme.
 
 <img src="images/changeTheme.png" height="400px">
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
@@ -996,11 +998,11 @@ You realised that all your current tutors and schedules created are wrong, and y
 
 Instead of deleting them one by one, use the clear command!
 
-<div markdown="block" class="alert alert-warning">
-
 <div style="page-break-after: always;"></div>
 
-**:danger: Danger**<br>
+<div markdown="block" class="alert alert-danger">
+
+**:warning: Warning**<br>
 
 This action is irreversible! Your tutors and schedules will be gone **FOREVER**.
 
