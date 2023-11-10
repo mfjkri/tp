@@ -323,6 +323,8 @@ Voila! His phone number has now been updated to **87654321**.
 
 ![edit tutor](images/editTutor.png)
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
@@ -371,6 +373,8 @@ Let's use the list tutor command to view the most updated list of tutors!
 2. Let's say you have successfully found one tutor named John Doe.
 3. Type in `list-t` and press enter to go back to view the full updated list of tutors.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Great job! You have found the full updated list of tutors.
@@ -387,7 +391,7 @@ Anything you type after `list-t` will be ignored.
 
 #### Locating tutors by name: `find-t`
 
-Finds tutors whose names contain any of the given keywords.
+Find tutors whose names contain any of the given keywords.
 
 ##### :star: First time users
 {:.no_toc}
@@ -407,7 +411,7 @@ Type in `find-t john` and press enter.
 
 Tada! You have found tutor **John Doe** (and any other tutors whose name contains John).
 
-![find tutor](images/findTutor.png)
+<img src="images/findTutor.png" height="400px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
