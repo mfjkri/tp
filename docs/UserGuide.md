@@ -612,6 +612,8 @@ marked as `COMPLETED`.
 
 ![list schedule tutor completed](images/list-schedules/list-s-tutor-completed.png)
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-success">
 
 **:bulb: Tip**<br>
