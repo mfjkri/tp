@@ -1048,7 +1048,7 @@ Type in `help` and press enter.
 Is that a bird? Is that a plane?
 Nope, it's the help window!
 
-<img src="images/helpWindow.png" height="400px">
+<img src="images/helpWindow.png" height="300px">
 
 <div markdown="block" class="alert alert-success">
 
