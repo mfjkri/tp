@@ -566,13 +566,12 @@ Tada! The schedule has now been updated to 8am.
 
 ![edit schedule](images/editSchedule.png)
 
-
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
 **Command format**
 
-![edit schedule command](images/editScheduleCommandSyntax.png)
+<img src="images/editScheduleCommandSyntax.png" height="300px">
 
 **Errors you might encounter**
 
