@@ -510,7 +510,7 @@ Type in `add-s 1 st/2023-12-01T09:00 et/2023-12-01T11:00` and press enter.
 
 Wow! The new schedule for Bernice Yu has now been added to the list of schedules.
 
-![add schedule](images/addSchedule.png)
+<img src="images/addSchedule.png" height="400px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -521,6 +521,7 @@ Wow! The new schedule for Bernice Yu has now been added to the list of schedules
 
 Here is a list of the error messages you may encounter, when the command is entered incorrectly:
 
+<div style="page-break-after: always;"></div>
 
 | Error Message                                                                                                      | Reason                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
@@ -536,6 +537,8 @@ Here is a list of the error messages you may encounter, when the command is ente
 Refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 #### Editing a schedule: `edit-s`
 
