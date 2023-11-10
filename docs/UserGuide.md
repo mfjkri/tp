@@ -17,11 +17,11 @@ Here’s an overview of what you can do with TutorConnect:
 Sounds good, right? On top of these functionalities, we believe in bringing you the most efficient scheduling tool. 
 TutorConnect is **optimised for users who can type fast** and utilise the [Command Line Interface (CLI)](#glossary) to complete tasks using the keyboard faster than using the mouse.
 
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 ## Table of Contents
 * Table of Contents
 {:toc}
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Usage of the User Guide
 
@@ -73,8 +73,6 @@ need. Look out for these coloured boxes!
 
 [Back To Top](#table-of-contents)
 
---------------------------------------------------------------------------------------------------------------------
-
 <div style="page-break-after: always;"></div>
 
 ## Quick Start
@@ -116,8 +114,6 @@ If the jar file cannot launch on double-click:
 3. The command should run and launch the application.
 </div>
 
-<div style="page-break-after: always;"></div>
-
 ### Navigating the Interface
 
 TutorConnect comes equipped with a [GUI](#glossary) interface that provides visual feedback to you.
@@ -135,8 +131,6 @@ Below is a quick overview of the various components of our interface.
 | Current Time     | Displays the current date and time.                                                        |
 
 [Back To Top](#table-of-contents)
-
---------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
@@ -217,8 +211,6 @@ TutorConnect. Please refer to the [**Features Section**](#features) to see what 
 Alternatively, visit the [**FAQ Section**](#faq) to view some frequently asked questions.
 
 [Back To Top](#table-of-contents)
-
---------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
@@ -470,8 +462,6 @@ Here is a list of the error messages you may encounter, when the command is ente
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 ### Schedule Related Features
 As busy tuition centre coordinators, creating conflict-free schedules is no easy feat. Don't worry! TutorConnect has 
@@ -1051,7 +1041,7 @@ TutorConnect closes and the program stops, going into deep slumber, disappearing
 
 [Back To Top](#table-of-contents)
 
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Frequently Asked Questions
 Have some burning questions you want answered? Check out this FAQ section to find out if others have had the same 
@@ -1077,7 +1067,7 @@ question!
 
 [Back To Top](#table-of-contents)
 
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Known Issues
 
@@ -1094,7 +1084,7 @@ use is sure to solve your scheduling needs.
 
 [Back To Top](#table-of-contents)
 
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Glossary
 
@@ -1172,7 +1162,7 @@ Commands reference: [add-s](#adding-a-schedule-add-s), [edit-s](#editing-a-sched
 [Back To Top](#table-of-contents)
 
 
---------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Command Summary
 
