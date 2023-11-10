@@ -250,6 +250,8 @@ Let’s add him into TutorConnect.
 
 Type in `add-t n/John Doe p/98765432 e/johnd@example.com` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Amazing! Tutor John Doe has now been added to the bottom of the displayed list.
@@ -263,6 +265,8 @@ Amazing! Tutor John Doe has now been added to the bottom of the displayed list.
 **Command format**
 
 ![add tutor command](images/addTutorCommandSyntax.png)
+
+<div style="page-break-after: always;"></div>
 
 <div markdown="block" class="alert alert-info">
 
