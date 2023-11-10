@@ -216,7 +216,7 @@ Here is how to use the [**mark**](#marking-a-schedule-mark) command to mark the 
 **Congratulations!** You have successfully added your first tutor and schedule, and also marked a schedule as 
 completed in TutorConnect. We hope that this tutorial has helped guide you through the basic features of 
 TutorConnect. Please refer to the [**Features Section**](#features) to see what else TutorConnect can do. 
-Alternatively, visit the [**FAQ Section**](#faq) to view some frequently asked questions.
+Alternatively, visit the [**FAQ Section**](#frequently-asked-questions) to view some frequently asked questions.
 
 [Back To Top](#table-of-contents)
 
@@ -566,12 +566,14 @@ Tada! The schedule has now been updated to 8am.
 
 ![edit schedule](images/editSchedule.png)
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
 **Command format**
 
-<img src="images/editScheduleCommandSyntax.png" height="200px">
+![edit schedule command](images/editScheduleCommandSyntax.png)
 
 **Errors you might encounter**
 
@@ -635,6 +637,8 @@ scenarios:
 - `list-s TUTOR_INDEX m/0` : To show schedules assigned to the tutor with index `TUTOR_INDEX` marked as `MISSED`.
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
