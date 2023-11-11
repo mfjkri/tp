@@ -521,6 +521,7 @@ Too many schedules? Don't worry!<br>
 Schedules are sorted in order of closest to current date.<br><br>
 
 Additionally, upcoming and past schedules are displayed as separate lists:
+
 - Upcoming schedules are sorted in ascending order with the most immediate schedules, at the very top.
 - Schedules that are before the current date on the other hand, are sorted in descending order, keeping the more 
 recently passed schedules at the top of the "Schedules Before Today" list.
