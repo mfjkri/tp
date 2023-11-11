@@ -518,13 +518,12 @@ Wow! The new schedule for Bernice Yu has now been added to the list of schedules
 
 Too many schedules? Don't worry!<br>
 
-Upcoming and past schedules are displayed as separate lists.<br><br> 
+Schedules are sorted in order of closest to current date.<br><br>
 
-Schedules are also sorted in order of closest to current date:
-
-* Upcoming schedules are sorted in ascending order with the most immediate schedules, at the very top.
-* Schedules that are before the current date on the other hand, are sorted in descending order, keeping the more 
-recently passed schedules at the top of the "Schedules Before Today" list.<br><br>
+Additionally, upcoming and past schedules are displayed as separate lists:
+- Upcoming schedules are sorted in ascending order with the most immediate schedules, at the very top.
+- Schedules that are before the current date on the other hand, are sorted in descending order, keeping the more 
+recently passed schedules at the top of the "Schedules Before Today" list.
 
 **Note**: Schedules that fall on the current day are considered as upcoming schedules regardless of the start and end 
 time.
@@ -778,6 +777,8 @@ Yay! The schedule has been marked as COMPLETED.
 * To set the status of the specified schedule to MISSED, use `m/0` as 0 indicates the MISSED status.
 * To set the status of the specified schedule to COMPLETED, use `m/1` as 1 indicates the COMPLETED status.
 * Any inputs other than 0 or 1 will result in an invalid status message displayed.
+* You can provide multiple values for the status field, e.g. `mark 1 m/0 m/0 m/1`. Only the last status field will be 
+  used, in the example earlier, it will use `m/1` and set the schedule status to be COMPLETED.
 
 </div>
 
@@ -991,6 +992,17 @@ Wow! A whole new colour scheme.
 
 ![theme command](images/themeCommandSyntax.png)
 
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Extra `NEW_THEME` keywords are ignored**<br>
+
+Only the first keyword provided is considered. Any additional keywords after will be ignored! 
+For example:
+- `theme blue white`, is equivalent to `theme blue`.
+- `theme white blue`, is equivalent to `theme white` and will encounter an error message.
+
+</div>
+
 **Errors you might encounter**
 
 Here is a list of the error messages you may encounter, when the command is entered incorrectly:
@@ -1170,18 +1182,18 @@ Here are some descriptions of the words you might come across in the User Guide:
 ### Input Information
 Here are some inputs you might come across in the User Guide:
 
-| Input               | Description                                       | Limitations                                                                                  |
-|---------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------|
-| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and should not be blank.                    |
-| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 digits long.                                  |
-| `e/EMAIL`           | Refers to the email address of the tutor.         | Of the format local-part@domain[<sup>2</sup>](#note2).                                       |
-| `st/START_TIME`     | Refers to the start time of the schedule.         | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                |
-| `et/END_TIME`       | Refers to the end time of the schedule.           | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                |
-| `m/SCHEDULE STATUS` | Refers to the status of schedule in the list.     | Only numerical inputs of 0 for MISSED status and 1 for COMPLETED status is accepted          |
-| `TUTOR_INDEX`       | Refers to the position of tutor in the list.      | Only numerical input that ranges from 1 to the last tutor shown in the list of tutors.       |
-| `SCHEDULE_INDEX`    | Refers to the position of schedule in the list.   | Only numerical input that ranges from 1 to the last schedule shown in the list of schedules. |
-| `DATE`              | Refers to the date to view schedules for.         | Only date in `yyyy-MM-dd` format is accepted.                                                |
-| `NEW_THEME`         | Refers to the name of the new theme to switch to. | Only `dark`, `light` and `blue` themes are supported.                                        |
+| Input               | Description                                       | Limitations                                                                                                                                                   |
+|---------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and should not be blank.                                                                                     |
+| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 digits long.                                                                                                   |
+| `e/EMAIL`           | Refers to the email address of the tutor.         | Of the format local-part@domain[<sup>2</sup>](#note2).                                                                                                        |
+| `st/START_TIME`     | Refers to the start time of the schedule.         | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                                 |
+| `et/END_TIME`       | Refers to the end time of the schedule.           | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                                 |
+| `m/SCHEDULE STATUS` | Refers to the status of schedule in the list.     | Only numerical inputs of 0 for MISSED status and 1 for COMPLETED status is accepted                                                                           |
+| `TUTOR_INDEX`       | Refers to the position of tutor in the list.      | Only numerical input that ranges from 1 to the last tutor shown in the list of tutors.<br>Additionally, the input cannot be greater than 2,147,483,647.       |
+| `SCHEDULE_INDEX`    | Refers to the position of schedule in the list.   | Only numerical input that ranges from 1 to the last schedule shown in the list of schedules.<br>Additionally, the input cannot be greater than 2,147,483,647. |
+| `DATE`              | Refers to the date to view schedules for.         | Only date in `yyyy-MM-dd` format is accepted.                                                                                                                 |
+| `NEW_THEME`         | Refers to the name of the new theme to switch to. | Only `dark`, `light` and `blue` themes are supported.                                                                                                         |
 
 
 **<sup id="note1">1</sup> `KEYWORD` Search Format and Behaviour**
