@@ -899,8 +899,6 @@ You're in luck with the calendar view command!
 
 To view the schedules on **15 September 2023** as a calendar, type in `show 2023-09-15` and press enter.
 
-<div style="page-break-after: always;"></div>
-
 **What you can expect to see**
 
 Woah look at that! The schedules are now being displayed in a calendar form.
