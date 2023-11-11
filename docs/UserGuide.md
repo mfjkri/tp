@@ -781,8 +781,6 @@ Here is a list of the error messages you may encounter, when the command is ente
 | `Invalid command format!`                                                | Invalid or missing SCHEDULE_INDEX or missing schedule status.      |
 | `The schedule index provided is invalid`                                 | SCHEDULE_INDEX entered is not in the range of number of schedules. |
 | `Status has to be either MISSED (m/0) or COMPLETED (m/1)`                | Schedule status entered is not 0 or 1.                             |
-| `Multiple values specified for the following single-valued field(s): m/` | More than 1 `m/` was given in the command.                         |
-
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
@@ -988,6 +986,7 @@ Wow! A whole new colour scheme.
 
 The theme command is a lenient one! Only the first input you provide is used. Any additional inputs thereafter will be 
 ignored. 
+
 For example:
 - `theme blue white`, is equivalent to `theme blue`.
 - `theme white blue`, is equivalent to `theme white` and will encounter an error message.
@@ -1022,7 +1021,7 @@ Instead of deleting them one by one, use the clear command!
 
 <div style="page-break-after: always;"></div>
 
-<div markdown="block" class="alert alert-danger">
+<div markdown="block" class="alert alert-warning">
 
 **:warning: Warning**<br>
 
@@ -1101,6 +1100,43 @@ TutorConnect closes and the program stops, going into deep slumber, disappearing
 
 [Back To Top](#table-of-contents)
 
+#### Saving the data
+
+All your data in TutorConnect is automatically saved in your computer. No more worrying about losing your unsaved data!
+
+##### :star::star::star: Experienced users
+{:.no_toc}
+
+<div markdown="block" class="alert alert-warning">
+
+**:warning: Exiting the app**<br>
+
+To prevent any unexpected behaviour in TutorConnect, exit the app using only the [`exit`](#exiting-the-program-exit) or
+the close window button.
+
+Do not stop the app from the command terminal (using [Windows](https://www.lifewire.com/open-command-prompt-in-a-folder-5185505) or [Mac](https://support.apple.com/en-sg/guide/terminal/trmlb20c7888/mac#:~:text=On%20your%20Mac%2C%20open%20a,window%3A%20Choose%20Open%20in%20Terminal)).
+
+</div>
+
+#### Editing the data
+
+##### :star::star::star: Experienced users
+{:.no_toc}
+
+TutorConnect supports manual edits to the data file created locally in your computer.
+Advanced users are welcome to update data directly by editing that data file.
+
+<div markdown="block" class="alert alert-warning">
+
+**:warning: Invalid edits to data file**<br>
+
+If your changes make the data file invalid, TutorConnect will discard all data at the next run. This data
+cannot be recovered so proceed with caution!
+
+As such, TutorConnect highly recommends you to make a backup of the file before you edit it.
+
+</div>
+
 <div style="page-break-after: always;"></div>
 
 ## Frequently Asked Questions
@@ -1173,18 +1209,18 @@ Here are some descriptions of the words you might come across in the User Guide:
 ### Input Information
 Here are some inputs you might come across in the User Guide:
 
-| Input               | Description                                       | Limitations                                                                                                                                                   |
-|---------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and should not be blank.                                                                                     |
-| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 digits long.                                                                                                   |
-| `e/EMAIL`           | Refers to the email address of the tutor.         | Of the format local-part@domain[<sup>2</sup>](#note2).                                                                                                        |
-| `st/START_TIME`     | Refers to the start time of the schedule.         | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                                 |
-| `et/END_TIME`       | Refers to the end time of the schedule.           | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                                 |
-| `m/SCHEDULE STATUS` | Refers to the status of schedule in the list.     | Only numerical inputs of 0 for MISSED status and 1 for COMPLETED status is accepted                                                                           |
-| `TUTOR_INDEX`       | Refers to the position of tutor in the list.      | Only numerical input that ranges from 1 to the last tutor shown in the list of tutors.<br>Additionally, the input cannot be greater than 2,147,483,647.       |
-| `SCHEDULE_INDEX`    | Refers to the position of schedule in the list.   | Only numerical input that ranges from 1 to the last schedule shown in the list of schedules.<br>Additionally, the input cannot be greater than 2,147,483,647. |
-| `DATE`              | Refers to the date to view schedules for.         | Only date in `yyyy-MM-dd` format is accepted.                                                                                                                 |
-| `NEW_THEME`         | Refers to the name of the new theme to switch to. | Only `dark`, `light` and `blue` themes are supported.                                                                                                         |
+| Input               | Description                                       | Limitations                                                                                                                                                |
+|---------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `n/NAME`            | Refers to the name of the tutor.                  | Only contain alphanumeric characters and spaces, and should not be blank.                                                                                  |
+| `p/PHONE NUMBER`    | Refers to the phone number of the tutor.          | Only contain numbers, and should be at least 3 digits long.                                                                                                |
+| `e/EMAIL`           | Refers to the email address of the tutor.         | Of the format local-part@domain[<sup>2</sup>](#note2).                                                                                                     |
+| `st/START_TIME`     | Refers to the start time of the schedule.         | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                              |
+| `et/END_TIME`       | Refers to the end time of the schedule.           | Only datetime in `yyyy-MM-ddTHH:mm`[<sup>3</sup>](#note3) format is accepted.                                                                              |
+| `m/SCHEDULE STATUS` | Refers to the status of schedule in the list.     | Only numerical inputs of 0 for MISSED status and 1 for COMPLETED status is accepted                                                                        |
+| `TUTOR_INDEX`       | Refers to the position of tutor in the list.      | Only numerical input that ranges from 1 to the last tutor shown in the list of tutors.<br>Additionally, the input cannot be greater than 2147483647.       |
+| `SCHEDULE_INDEX`    | Refers to the position of schedule in the list.   | Only numerical input that ranges from 1 to the last schedule shown in the list of schedules.<br>Additionally, the input cannot be greater than 2147483647. |
+| `DATE`              | Refers to the date to view schedules for.         | Only date in `yyyy-MM-dd` format is accepted.                                                                                                              |
+| `NEW_THEME`         | Refers to the name of the new theme to switch to. | Only `dark`, `light` and `blue` themes are supported.                                                                                                      |
 
 
 **<sup id="note1">1</sup> `KEYWORD` Search Format and Behaviour**
