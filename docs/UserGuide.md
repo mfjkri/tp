@@ -1057,6 +1057,8 @@ As an experienced user, you should be aware of the dangers of the `clear` comman
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Opening the help window: `help`
 
 Opens a window with instructions for getting help.
