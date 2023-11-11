@@ -770,6 +770,8 @@ Yay! The schedule has been marked as COMPLETED.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 **Errors you might encounter**
 
 Here is a list of the error messages you may encounter, when the command is entered incorrectly:
@@ -804,13 +806,13 @@ Don't worry, as you can do just that with the unmark command.
 2. Let's say the schedule to be unmarked is at position 1.
 3. Type in `unmark 1` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Phew! The schedule has now been unmarked.
 
 ![unmark schedule](images/unmarkSchedule.png)
-
-<div style="page-break-after: always;"></div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -850,6 +852,8 @@ No worries! Let the delete schedule command help you!
 1. Type `list-s` and press enter to get the index number of the schedule to be deleted.
 2. Let's say the schedule to be deleted is in position 1 of the schedule list.
 3. Type `delete-s 1` and press enter.
+
+<div style="page-break-after: always;"></div>
 
 **What you can expect to see**
 
