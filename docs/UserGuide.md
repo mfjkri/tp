@@ -1044,7 +1044,9 @@ Type in `clear` and press enter.
 
 That's it. It's all gone. TutorConnect should now display an empty address book.
 
-![clear addressbook](images/clearAddressBook.png)
+<img src="images/clearAddressBook" height="400px">
+
+<img src="images/list-schedules/list-s-syntax.png" height="200px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -1054,8 +1056,6 @@ There are no additional information about this command.
 As an experienced user, you should be aware of the dangers of the `clear` command.  
 
 [Back To Top](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 #### Opening the help window: `help`
 
