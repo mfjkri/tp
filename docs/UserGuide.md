@@ -1046,7 +1046,9 @@ Type in `clear` and press enter.
 
 That's it. It's all gone. TutorConnect should now display an empty address book.
 
-<img src="images/clearAddressBook.png" height="400px">
+![clear addressbook](images/clearAddressBook.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -1056,8 +1058,6 @@ There are no additional information about this command.
 As an experienced user, you should be aware of the dangers of the `clear` command.  
 
 [Back To Top](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 #### Opening the help window: `help`
 
@@ -1128,6 +1128,8 @@ Do not stop the app from the command terminal (using [Windows](https://www.lifew
 
 </div>
 
+[Back To Top](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Editing the data
@@ -1148,6 +1150,8 @@ cannot be recovered so proceed with caution!
 As such, TutorConnect highly recommends you to make a backup of the file before you edit it.
 
 </div>
+
+[Back To Top](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
