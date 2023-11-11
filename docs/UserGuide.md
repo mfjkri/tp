@@ -516,18 +516,8 @@ Wow! The new schedule for Bernice Yu has now been added to the list of schedules
 
 **:bulb: Position of new schedule**<br>
 
-Too many schedules? Don't worry!<br>
-
-Schedules are sorted in order of closest to current date.<br><br>
-
-Additionally, upcoming and past schedules are displayed as separate lists:
-
-- Upcoming schedules are sorted in ascending order with the most immediate schedules, at the very top.
-- Schedules that are before the current date on the other hand, are sorted in descending order, keeping the more 
-recently passed schedules at the top of the "Schedules Before Today" list.
-
-**Note**: Schedules that fall on the current day are considered as upcoming schedules regardless of the start and end 
-time.
+Too many schedules? Don't worry! Upcoming and past schedules are displayed as separate lists. Schedules are also sorted 
+in order of closest to current date.
 
 </div>
 
@@ -777,7 +767,6 @@ Yay! The schedule has been marked as COMPLETED.
 * There are only two types of schedule status: MISSED or COMPLETED.
 * To set the status of the specified schedule to MISSED, use `m/0` as 0 indicates the MISSED status.
 * To set the status of the specified schedule to COMPLETED, use `m/1` as 1 indicates the COMPLETED status.
-* Any inputs other than 0 or 1 will result in an invalid status message displayed.
 * You can provide multiple values for the status field, e.g. `mark 1 m/0 m/0 m/1`. Only the last status field will be 
   used, in the example earlier, it will use `m/1` and set the schedule status to be COMPLETED.
 
@@ -995,9 +984,10 @@ Wow! A whole new colour scheme.
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Extra `NEW_THEME` keywords are ignored**<br>
+**:information_source: Extra `NEW_THEME` inputs are ignored**<br>
 
-Only the first keyword provided is considered. Any additional keywords after will be ignored! 
+The theme command is a lenient one! Only the first input you provide is used. Any additional inputs thereafter will be 
+ignored. 
 For example:
 - `theme blue white`, is equivalent to `theme blue`.
 - `theme white blue`, is equivalent to `theme white` and will encounter an error message.
