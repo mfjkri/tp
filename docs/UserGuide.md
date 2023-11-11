@@ -321,7 +321,7 @@ Let's use the edit tutor command to update his phone number!
 
 Voila! His phone number has now been updated to **87654321**.
 
-![edit tutor](images/editTutor.png)
+<img src="images/editTutor.png" height="600px">
 
 <div style="page-break-after: always;"></div>
 
@@ -511,6 +511,14 @@ Type in `add-s 1 st/2023-12-01T09:00 et/2023-12-01T11:00` and press enter.
 Wow! The new schedule for Bernice Yu has now been added to the list of schedules.
 
 <img src="images/addSchedule.png" height="400px">
+
+<div markdown="span" class="alert alert-success">
+
+:bulb: Position of new schedule
+
+Too many schedules? Don't worry! Upcoming and past schedules are displayed as separate lists. Schedules are also sorted in order of closest to current date.
+
+</div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
