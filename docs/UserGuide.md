@@ -530,8 +530,6 @@ in order of closest to current date.
 
 Here is a list of the error messages you may encounter, when the command is entered incorrectly:
 
-<div style="page-break-after: always;"></div>
-
 | Error Message                                                                                                      | Reason                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | `Invalid command format!`                                                                                          | Invalid `TUTOR_INDEX` or some of the tags `st/`, `et/` is missing.                           |
@@ -569,13 +567,13 @@ The edit schedule function is here for that!
 2. Let's say the schedule to be updated is in position 1.
 3. Type in `edit-s 1 st/2023-09-15T08:00` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Tada! The schedule has now been updated to 8am.
 
 ![edit schedule](images/editSchedule.png)
-
-<div style="page-break-after: always;"></div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
@@ -606,6 +604,8 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Listing all schedules: `list-s`
 
 Displays a list of all schedules in TutorConnect. List can be filtered by tutors assigned or status.
@@ -633,6 +633,8 @@ marked as `COMPLETED`.
 
 <img src="images/list-schedules/list-s-tutor-completed.png" height="400px">
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-success">
 
 **:bulb: Tip**<br>
@@ -646,8 +648,6 @@ scenarios:
 - `list-s TUTOR_INDEX m/0` : To show schedules assigned to the tutor with index `TUTOR_INDEX` marked as `MISSED`.
 
 </div>
-
-<div style="page-break-after: always;"></div>
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
