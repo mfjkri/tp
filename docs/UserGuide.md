@@ -869,8 +869,6 @@ Well done! You have deleted the schedule assigned to **Bernice Yu**.
 **Command format**
 ![delete schedule command](images/delete-schedules/delete-s-syntax.png)
 
-<div style="page-break-after: always;"></div>
-
 **Errors you might encounter**
 
 Here is a list of the error messages you may encounter, when the command is entered incorrectly:
@@ -950,6 +948,8 @@ This command might seem complicated, but it is easy to use with only 1 possible 
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### System Feature
 
