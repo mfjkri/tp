@@ -865,7 +865,7 @@ Well done! You have deleted the schedule assigned to **Bernice Yu**.
 {:.no_toc}
 
 **Command format**
-![delete schedule command](images/delete-schedules/delete-s-syntax.png)
+<img src="images/delete-schedules/delete-s-syntax.png" height="200px">
 
 <div style="page-break-after: always;"></div>
 
@@ -903,7 +903,7 @@ To view the schedules on **15 September 2023** as a calendar, type in `show 2023
 
 Woah look at that! The schedules are now being displayed in a calendar form.
 
-<img src="images/showCalendar.png" height="400px">
+<img src="images/showCalendar.png" height="200px">
 
 <div style="page-break-after: always;"></div>
 
