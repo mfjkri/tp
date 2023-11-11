@@ -545,8 +545,6 @@ Refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
 
-<div style="page-break-after: always;"></div>
-
 #### Editing a schedule: `edit-s`
 
 Edits an existing schedule in TutorConnect.
@@ -624,8 +622,6 @@ Use the list schedule function!
 1. On the left panel that shows the list of tutors, check the `TUTOR_INDEX` of Irfan Ibrahim. Here, the index is 2.
 2. Type in `list-s 2 m/1` and press enter.
 
-<div style="page-break-after: always;"></div>
-
 **What you can expect to see**
 
 Tada! For step 2, the schedule list has now been updated to show schedules assigned to tutor Irfan Ibrahim that are 
@@ -654,7 +650,7 @@ scenarios:
 
 **Command format**
 
-![list schedule command](images/list-schedules/list-s-syntax.png)
+<img src="images/list-schedules/list-s-syntax.png" height="200px">
 
 <div markdown="block" class="alert alert-info">
 
@@ -747,6 +743,8 @@ Fret not, as you can do just that with the mark command.
 2. Let's say the schedule is at position 1.
 3. Type in `mark 1 m/1` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Yay! The schedule has been marked as COMPLETED.
@@ -781,6 +779,7 @@ Here is a list of the error messages you may encounter, when the command is ente
 | `Invalid command format!`                                                | Invalid or missing SCHEDULE_INDEX or missing schedule status.      |
 | `The schedule index provided is invalid`                                 | SCHEDULE_INDEX entered is not in the range of number of schedules. |
 | `Status has to be either MISSED (m/0) or COMPLETED (m/1)`                | Schedule status entered is not 0 or 1.                             |
+
 You can also refer to [input information](#input-examples) for details about valid inputs.
 
 [Back To Top](#table-of-contents)
