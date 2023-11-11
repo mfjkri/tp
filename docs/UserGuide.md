@@ -514,7 +514,7 @@ Wow! The new schedule for Bernice Yu has now been added to the list of schedules
 
 <div markdown="span" class="alert alert-success">
 
-:bulb: Position of new schedule
+**:bulb: Position of new schedule**<br>
 
 Too many schedules? Don't worry! Upcoming and past schedules are displayed as separate lists. Schedules are also sorted in order of closest to current date.
 
