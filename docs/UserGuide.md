@@ -920,6 +920,8 @@ Woah look at that! The schedules are now being displayed in a calendar form.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
@@ -1045,8 +1047,6 @@ Type in `clear` and press enter.
 That's it. It's all gone. TutorConnect should now display an empty address book.
 
 <img src="images/clearAddressBook" height="400px">
-
-<img src="images/list-schedules/list-s-syntax.png" height="200px">
 
 ##### :star::star::star: Experienced users
 {:.no_toc}
