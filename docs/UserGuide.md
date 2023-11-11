@@ -1011,6 +1011,8 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Clearing all data: `clear`
 
 Clears all data in TutorConnect.
@@ -1086,6 +1088,7 @@ The help window can also be accessed by the button in the menu bar (above the co
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
 
 #### Exiting the program: `exit`
 
@@ -1122,6 +1125,8 @@ the close window button.
 Do not stop the app from the command terminal (using [Windows](https://www.lifewire.com/open-command-prompt-in-a-folder-5185505) or [Mac](https://support.apple.com/en-sg/guide/terminal/trmlb20c7888/mac#:~:text=On%20your%20Mac%2C%20open%20a,window%3A%20Choose%20Open%20in%20Terminal)).
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 #### Editing the data
 
