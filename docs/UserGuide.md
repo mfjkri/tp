@@ -321,7 +321,7 @@ Let's use the edit tutor command to update his phone number!
 
 Voila! His phone number has now been updated to **87654321**.
 
-<img src="images/editTutor.png" height="600px">
+![edit tutor](images/editTutor.png)
 
 <div style="page-break-after: always;"></div>
 
