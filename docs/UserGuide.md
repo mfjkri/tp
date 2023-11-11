@@ -518,12 +518,13 @@ Wow! The new schedule for Bernice Yu has now been added to the list of schedules
 
 Too many schedules? Don't worry!<br>
 
-Upcoming and past schedules are displayed as separate lists.<br> 
+Upcoming and past schedules are displayed as separate lists.<br><br> 
 
-Schedules are also sorted in order of closest to current date:<br>
+Schedules are also sorted in order of closest to current date:
+
 * Upcoming schedules are sorted in ascending order with the most immediate schedules, at the very top.
 * Schedules that are before the current date on the other hand, are sorted in descending order, keeping the more 
-recently passed schedules at the top of the "Schedules Before Today" list.<br>
+recently passed schedules at the top of the "Schedules Before Today" list.<br><br>
 
 **Note**: Schedules that fall on the current day are considered as upcoming schedules regardless of the start and end 
 time.
