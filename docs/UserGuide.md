@@ -834,6 +834,8 @@ You can also refer to [input information](#input-examples) for details about val
 
 [Back To Top](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Deleting a schedule: `delete-s`
 
 Deletes a schedule from TutorConnect.
@@ -853,8 +855,6 @@ No worries! Let the delete schedule command help you!
 2. Let's say the schedule to be deleted is in position 1 of the schedule list.
 3. Type `delete-s 1` and press enter.
 
-<div style="page-break-after: always;"></div>
-
 **What you can expect to see**
 
 Well done! You have deleted the schedule assigned to **Bernice Yu**.
@@ -866,6 +866,8 @@ Well done! You have deleted the schedule assigned to **Bernice Yu**.
 
 **Command format**
 ![delete schedule command](images/delete-schedules/delete-s-syntax.png)
+
+<div style="page-break-after: always;"></div>
 
 **Errors you might encounter**
 
@@ -1022,8 +1024,6 @@ You realised that all your current tutors and schedules created are wrong, and y
 
 Instead of deleting them one by one, use the clear command!
 
-<div style="page-break-after: always;"></div>
-
 <div markdown="block" class="alert alert-warning">
 
 **:warning: Warning**<br>
@@ -1052,6 +1052,8 @@ There are no additional information about this command.
 As an experienced user, you should be aware of the dangers of the `clear` command.  
 
 [Back To Top](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 #### Opening the help window: `help`
 
