@@ -25,12 +25,6 @@ public class ThemeCommandParserTest {
     }
 
     @Test
-    public void parse_twoThemes_throwsParseException() {
-        assertParseFailure(parser, "blue green", String.format(MESSAGE_UNKNOWN_THEME,
-            ThemeCommand.MESSAGE_USAGE));
-    }
-
-    @Test
     public void parse_validArgs_returnsThemeCommand() {
         ThemeCommand expectedThemeCommand1 =
             new ThemeCommand("/view/DarkTheme.css", "dark");

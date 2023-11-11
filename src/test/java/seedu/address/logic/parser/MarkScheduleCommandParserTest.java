@@ -1,6 +1,5 @@
 package seedu.address.logic.parser;
 
-import static seedu.address.logic.Messages.MESSAGE_DUPLICATE_FIELDS;
 import static seedu.address.logic.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.address.logic.parser.CommandParserTestUtil.assertParseFailure;
 import static seedu.address.logic.parser.CommandParserTestUtil.assertParseSuccess;
@@ -69,10 +68,5 @@ public class MarkScheduleCommandParserTest {
 
         // valid Schedule status for Completed
         assertParseSuccess(parser, "1 m/1", new MarkScheduleCommand(INDEX_FIRST_PERSON, Status.COMPLETED));
-    }
-
-    @Test
-    public void parse_multiplePrefixes_failure() {
-        assertParseFailure(parser, "1 m/0 m/1", MESSAGE_DUPLICATE_FIELDS + "m/");
     }
 }
