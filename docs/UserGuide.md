@@ -861,11 +861,13 @@ Well done! You have deleted the schedule assigned to **Bernice Yu**.
 
 ![delete schedule](images/delete-schedules/delete-s.png)
 
+<div style="page-break-after: always;"></div>
+
 ##### :star::star::star: Experienced users
 {:.no_toc}
 
 **Command format**
-<img src="images/delete-schedules/delete-s-syntax.png" height="200px">
+![delete schedule command](images/delete-schedules/delete-s-syntax.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -899,13 +901,13 @@ You're in luck with the calendar view command!
 
 To view the schedules on **15 September 2023** as a calendar, type in `show 2023-09-15` and press enter.
 
+<div style="page-break-after: always;"></div>
+
 **What you can expect to see**
 
 Woah look at that! The schedules are now being displayed in a calendar form.
 
-<img src="images/showCalendar.png" height="200px">
-
-<div style="page-break-after: always;"></div>
+![show calendar](images/showCalendar.png)
 
 <div markdown="block" class="alert alert-success">
 
